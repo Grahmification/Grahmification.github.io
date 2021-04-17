@@ -26,14 +26,14 @@ h2{
   line-height: 1.2rem;
 }
 
-//limit the max size of the ingredients column on a browser
-.col-xl-auto{
-  max-width: 50%;
-}
-
-//limit the max size of the ingredients column on a browser
-.col-lg-auto{
-  max-width: 50%;
+//limit the max size of the ingredients column on a browser - only want limited when the screen is large
+@media all and (min-width: 992px) { 
+  .col-xl-auto{
+    max-width: 50%;
+  }
+  .col-lg-auto{
+    max-width: 50%;
+  }
 }
 
 #post-wrapper .post-meta {

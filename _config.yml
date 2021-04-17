@@ -148,7 +148,6 @@ defaults:
       comments: false    # Enable comments in recipes.
       toc: false         # Display TOC column in recipes.
 
-
 sass:
   style: compressed
 
