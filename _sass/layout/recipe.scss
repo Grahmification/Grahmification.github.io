@@ -1,0 +1,148 @@
+/*
+  Post-specific style
+*/
+
+@mixin btn-sharing-color($light-color, $important: false) {
+  @if $important {
+    color: var(--btn-share-color, $light-color) !important;
+  } @else {
+    color: var(--btn-share-color, $light-color);
+  }
+}
+
+@mixin btn-post-nav {
+  width: 50%;
+  position: relative;
+  border-color: var(--btn-border-color);
+}
+
+//h2 has really dumb padding by default that covers link at the top
+h2{
+  margin-top: 1rem;
+  padding-top: 0rem;
+}
+
+.recipe-data{
+  line-height: 1.2rem;
+}
+
+//limit the max size of the ingredients column on a browser
+.col-xl-auto{
+  max-width: 50%;
+}
+
+//limit the max size of the ingredients column on a browser
+.col-lg-auto{
+  max-width: 50%;
+}
+
+#post-wrapper .post-meta {
+  > div:nth-child(2) {
+    > span:not(:first-child)::before {
+      @include dot;
+    }
+  }
+
+  #pv::after {
+    content: " views";
+  }
+
+  .readtime::after {
+    content: "";
+  }
+}
+
+
+.post-tail-wrapper {
+  margin-top: 1rem;
+  border-bottom: 0px double var(--main-border-color);
+  font-size: 0.85rem;
+}
+
+.post-tags {
+  line-height: 2rem;
+}
+
+.post-content {
+  margin-top: 1rem;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    position: relative;
+    top: 2rem;
+  }
+  to {
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
+}
+
+.license-wrapper {
+  line-height: 1.2rem;
+  > a {
+    font-weight: 600;
+    &:hover {
+      @extend %link-hover;
+    }
+  }
+
+  span:last-child {
+    font-size: 0.85rem;
+  }
+} // .license-wrapper
+
+@media all and (max-width: 576px) {
+  .post-tail-bottom {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
+    >div:first-child {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+
+  .post-content > div[class^='language-'] {
+    @include ml-mr(-1.25rem);
+
+    border-radius: 0;
+    &::before { // the lang badge
+      right: 1rem;
+    }
+  }
+
+}
+
+@media all and (max-width: 768px) {
+  .post-content > p > img {
+    max-width: calc(100% + 1rem);
+  }
+}
+
+@media all and (min-width: 768px) {
+  #post-wrapper {
+    .post-meta {
+      >div:not(:first-child)::before {
+        @include dot(0.5rem, 0.2rem);
+      }
+      &.flex-column {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+      }
+    }
+  } // .post
+}
+
+/* Hide SideBar and TOC */
+@media all and (max-width: 830px) {
+  .post-navigation {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+  }
+}

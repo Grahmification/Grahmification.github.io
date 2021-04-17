@@ -1,0 +1,38 @@
+---
+layout: page
+# The recipes page layout
+---
+
+<!-- Get the recipes -->
+
+{% assign pinned = site.recipes | where_exp: "item", "item.pin == true"  %}
+{% assign default = site.recipes | where_exp: "item", "item.pin != true"  %}
+{% assign recipes = "" | split: "" %}
+
+<!-- Get pinned recipes -->
+
+{% if pinned.size > 0 %}
+  {% for i in (0..pinned.size) %}
+    {% assign recipes = recipes | push: pinned[i] %}
+  {% endfor %}
+{% endif %}
+
+<!-- Get default recipes -->
+
+{% if default.size > 0 %}
+  {% for i in (0..default.size) %}
+    {% assign recipes = recipes | push: default[i] %}
+  {% endfor %}
+{% endif %}
+
+<!--{% assign posts = site.recipes %}-->
+
+<div id="post-list">
+
+{% for post in posts %}
+  {% include recipe-preview.html recipe=post %}
+{% endfor %}
+
+</div> <!-- #post-list -->
+
+

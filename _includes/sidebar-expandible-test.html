@@ -1,5 +1,5 @@
 <!--
-  The Side Bar
+  Test code for a sidebar that allows expandible tabs with children
 -->
 
 <div id="sidebar" class="d-flex flex-column align-items-end">
@@ -37,6 +37,38 @@
       </a>
     </li>
 
+     <!-- test tab 2 -->
+     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+      <a href="{{ '/' | relative_url }}" class="nav-link">
+        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>{{ "test" }}</span>
+      </a>
+
+      <!-- arrow -->
+      <a href="#testID" data-toggle="collapse"
+        aria-expanded="false" aria-label="testID-trigger"
+        class="category-trigger hide-border-bottom">
+        <i class="fas fa-fw fa-angle-down"></i>
+      </a> 
+    </li>
+
+    <div id="testID" class="collapse show" aria-expanded="false">
+      <ul class="w-100" style="height: fit-content;">
+        <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+          <a href="{{ '/' | relative_url }}" class="nav-link">
+            <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+            <span>{{ "HOME" }}</span>
+          </a>
+        </li>
+        <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+          <a href="{{ '/' | relative_url }}" class="nav-link">
+            <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+            <span>{{ "HOME" }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <!-- the real tabs -->
     {% for tab in site.tabs %}
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
@@ -46,6 +78,10 @@
       </a>
     </li> <!-- .nav-item -->
     {% endfor %}
+
+
+
+
   </ul> <!-- ul.nav.flex-column -->
 
   <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center">

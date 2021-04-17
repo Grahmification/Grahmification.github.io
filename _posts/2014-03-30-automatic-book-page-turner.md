@@ -3,9 +3,8 @@ title: Automatic Book Page Turner
 date: 2014-03-30 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, School]
 tags: [design, cad, laser cutter]     # TAG names should always be lowercase
+thumbnail: https://live.staticflickr.com/1493/23502546754_6bb89c4d85_b.jpg
 ---
-
-## Background
 
 The automatic page turner was created as part of a 2nd year Engineering design class at the U of S. The goal was to create a device for a disabled lady to automatically turn the pages of a book at the click of a button. Ideally it would work with as many sizes of books as possible. How hard could it be?
 

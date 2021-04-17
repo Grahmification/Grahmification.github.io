@@ -112,6 +112,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  recipes:
+    output: true
+    permalink: /:collection/:path/
 
 
 defaults:
@@ -121,7 +124,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true    # Enable comments in posts.
+      comments: false    # Enable comments in posts.
       toc: true         # Display TOC column in posts.
   -
     scope:
@@ -136,6 +139,15 @@ defaults:
       layout: page
       permalink: /:title/
       dynamic_title: true    # Hide title in mobile screens.
+  -
+    scope:
+      path: ''
+      type: recipes
+    values:
+      layout: recipe
+      comments: false    # Enable comments in recipes.
+      toc: false         # Display TOC column in recipes.
+
 
 sass:
   style: compressed

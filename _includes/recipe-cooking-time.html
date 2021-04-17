@@ -1,0 +1,25 @@
+<!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+{% assign minutes = include.minutes %}
+
+<!-- don't display anything if time is null -->
+{% if minutes %}
+  {% assign hours = minutes | divided_by: 60 %}
+
+  {% if hours > 0 %}
+    {% assign hourMinutes = hours | times: 60 %}
+    {% assign minutes = minutes | minus: hourMinutes %}
+    <!-- return element with hours and minutes -->
+    <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="Cooking time">
+      {{- hours -}}{{" "}}{{- "hr" -}}{{" "}}{{- minutes -}}{{" "}}{{- "min" -}}
+    </span>
+  {% else %}
+    <!-- return element with minutes -->
+    <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="Cooking time">
+      {{- minutes -}}{{" "}}{{- "min" -}}
+    </span>
+  {% endif %}
+{% endif %}
+
+
