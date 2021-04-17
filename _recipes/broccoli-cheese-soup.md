@@ -1,7 +1,7 @@
 ---
 
 layout: recipe
-title:  "Broccoli Beer Cheese Soup"
+title: Broccoli Beer Cheese Soup
 image: broccoli-beer-cheese-soup.jpg
 categories: [Recipes]
 tags: [sides, soups]     # TAG names should always be lowercase

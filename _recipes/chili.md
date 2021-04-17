@@ -1,7 +1,7 @@
 ---
 
 layout: recipe
-title:  "Chili"
+title: Chili
 image:
 categories: [Recipes]
 tags: [mains, beef]     # TAG names should always be lowercase

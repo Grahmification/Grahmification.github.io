@@ -1,7 +1,7 @@
 ---
 
 layout: recipe
-title:  "Penne Arrabiata"
+title: Penne Arrabiata
 image:
 categories: [Recipes]
 tags: [mains, chicken]     # TAG names should always be lowercase

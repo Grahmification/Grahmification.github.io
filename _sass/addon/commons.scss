@@ -863,6 +863,7 @@ $sidebar-display: "sidebar-display";
 } // #topbar
 
 #sidebar-trigger,
+#topbar-previous,
 #search-trigger {
   display: none;
 }
@@ -1190,6 +1191,7 @@ $sidebar-display: "sidebar-display";
 
   #topbar-title,
   #sidebar-trigger,
+  #topbar-previous,
   #search-trigger {
     display: block;
   }

@@ -35,7 +35,8 @@
             {{ item | capitalize }}
           </a>
         </span>
-
+        
+        {% assign prevUrl = url %} <!-- this will get the second last iteration of the for loop if there is more than 1 item (which we want)-->
         {% endif %}
 
       {% endfor %}
@@ -44,8 +45,14 @@
 
     </span><!-- endof #breadcrumb -->
 
+    <!-- Top bar for mobile devices -->
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
+    <!-- Add a back button for mobile if we are on a sub-page-->
+    {% if prevUrl %}
+    <a id="topbar-previous" href="{{ prevUrl | relative_url }}"> <i class="fas fa-angle-double-left"></i></a>
+    {% endif %}
+  
     <div id="topbar-title">
       {% if page.layout == 'home' %}
         {{- site.title -}}
