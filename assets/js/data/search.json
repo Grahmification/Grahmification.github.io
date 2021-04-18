@@ -14,4 +14,20 @@ layout: compress
     "snippet": "{{ content | strip_html | strip_newlines | remove_chars | escape | truncate: 300 | replace: '\', '\\\\' }}"
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
+  ,
+  {% for recipe in site.recipes %}
+  {
+    "title": "{{ recipe.title | escape }}",
+    "url": "{{ site.baseurl }}{{ recipe.url }}",
+    "categories": "{{ recipe.categories | join: ', '}}",
+    "tags": "{{ recipe.tags | join: ', ' }}",
+    {% include no-linenos.html content=recipe.content %}
+    {% assign normalizedContent = content | strip_html | strip_newlines | remove_chars | escape | truncate: 300 | replace: '\', '\\\\' %}  
+    {% if normalizedContent != "" %}
+      "snippet": "{{ normalizedContent }}"
+    {% else %}
+      "snippet": " " 
+    {% endif %}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
 ]

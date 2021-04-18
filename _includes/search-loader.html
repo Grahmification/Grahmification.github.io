@@ -3,6 +3,7 @@
   See: <https://github.com/christian-fei/Simple-Jekyll-Search>
 -->
 
+<!-- Search result format template -->
 {% capture result_elem %}
 <div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">
   <a href="{{ site.url }}{url}">{title}</a>
@@ -14,8 +15,10 @@
 </div>
 {% endcapture %}
 
+<!-- Search result not found format template -->
 {% capture not_found %}<p class="mt-5">Oops! No result founds.</p>{% endcapture %}
 
+<!-- Searching script -->
 <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script>
 
 <script>
