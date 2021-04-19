@@ -2,6 +2,6 @@
 ---
 
 // see: /_sass/addon/commons.scss
-$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
+$tab-count: {{ site.data.navigation.sidebar | size }}; //makes sidebar moveover highlighting work properly
 
 @import "jekyll-theme-chirpy";

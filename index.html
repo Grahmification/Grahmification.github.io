@@ -1,4 +1,6 @@
 ---
-layout: home
-# Index page
+layout: page
+permalink: /
+# Index page - needs to be in root directory for pagination to work
 ---
+{% include post-list.html posts=site.posts %}

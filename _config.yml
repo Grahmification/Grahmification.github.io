@@ -109,13 +109,9 @@ kramdown:
 permalink: /posts/:title/
 
 collections:
-  tabs:
-    output: true
-    sort_by: order
   recipes:
     output: true
     permalink: /:collection/:path/
-
 
 defaults:
   -
@@ -134,10 +130,8 @@ defaults:
   -
     scope:
       path: ''
-      type: tabs             # see `site.collections`
+      type: pages             
     values:
-      layout: page
-      permalink: /:title/
       dynamic_title: true    # Hide title in mobile screens.
   -
     scope:
@@ -145,7 +139,7 @@ defaults:
       type: recipes
     values:
       layout: recipe
-      comments: false    # Enable comments in recipes.
+      comments: false    # Disable comments in recipes.
       toc: false         # Display TOC column in recipes.
 
 sass:
@@ -160,6 +154,9 @@ compress_html:
   ignore:
     envs: [development]
 
+include:
+  - _pages
+  - files # folder for adding file content (ex. pdfs)
 exclude:
   - vendor
   - Gemfile

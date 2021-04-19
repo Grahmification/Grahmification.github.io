@@ -1,11 +1,10 @@
----
-layout: page
-# The Home page layout
----
+<!--
+ A list of posts with pinned at the top and proper pagination
+-->
+{% assign inputPosts = include.posts %}
 
-
-{% assign pinned = site.posts | where_exp: "item", "item.pin == true"  %}
-{% assign default = site.posts | where_exp: "item", "item.pin != true"  %}
+{% assign pinned = inputPosts | where_exp: "item", "item.pin == true"  %}
+{% assign default = inputPosts | where_exp: "item", "item.pin != true"  %}
 {% assign posts = "" | split: "" %}
 
 <!-- Get pinned posts -->
