@@ -1,10 +1,9 @@
 ---
 
-layout: recipe
 title: Penne Arrabiata
 image:
 categories: [Recipes]
-tags: [mains, chicken]     # TAG names should always be lowercase
+tags: [mains, chicken, pasta]     # TAG names should always be lowercase
 last_modified: 2018-01-01
 cookingTime: 75 # recipe time in minutes
 sourceLink: https://www.allrecipes.com/recipe/77758/brooklyn-girls-penne-arrabiata/

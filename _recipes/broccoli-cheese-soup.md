@@ -1,6 +1,5 @@
 ---
 
-layout: recipe
 title: Broccoli Beer Cheese Soup
 image: broccoli-beer-cheese-soup.jpg
 categories: [Recipes]

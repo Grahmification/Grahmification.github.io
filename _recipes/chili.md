@@ -1,6 +1,5 @@
 ---
 
-layout: recipe
 title: Chili
 image:
 categories: [Recipes]
