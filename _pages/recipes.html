@@ -12,27 +12,43 @@ permalink: /recipes/
 {% assign recipes = "" | split: "" %}
 
 <!-- Get pinned recipes -->
+{% assign pinnedEnd = pinned.size | minus: 1 %}
 
 {% if pinned.size > 0 %}
-  {% for i in (0..pinned.size) %}
+  {% for i in (0..pinnedEnd) %}
     {% assign recipes = recipes | push: pinned[i] %}
   {% endfor %}
 {% endif %}
 
 <!-- Get default recipes -->
+{% assign defaultEnd = default.size | minus: 1 %}
 
 {% if default.size > 0 %}
-  {% for i in (0..default.size) %}
+  {% for i in (0..defaultEnd) %}
     {% assign recipes = recipes | push: default[i] %}
   {% endfor %}
 {% endif %}
 
-<!--{% assign posts = site.recipes %}-->
+<!-- Get Collection Metadata -->
+{% include get-collection-data.html collection=recipes %}
 
+<!-- tags -->
+{% if tags.size > 0 %}
+<div class="post-tags text-muted" style="font-size: 0.85rem;">
+  
+  <i class="fa fa-tags fa-fw mr-1"></i>
+  {% for tag in tags %}
+    <div class="post-tag no-text-decoration" >
+      {{- tag -}}
+    </div>
+  {% endfor %}
+
+</div>
+{% endif %}
+
+<!--List recipe previews-->
 <div id="post-list">
-
-{% for post in posts %}
+{% for post in recipes %}
   {% include recipe-preview.html recipe=post %}
 {% endfor %}
-
 </div> <!-- #post-list -->

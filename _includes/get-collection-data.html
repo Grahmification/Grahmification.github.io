@@ -1,0 +1,40 @@
+<!--
+  Gets all the unique categories, sub-categories, and tags in a collection
+ -->
+
+ <!-- Define new empty arrays -->
+ {% assign categories = "" | split: "" %}
+ {% assign subCategories = "" | split: "" %}
+ {% assign tags = "" | split: "" %}
+
+<!-- Iterate through each item -->
+{% for item in include.collection %}
+    
+    <!-- Get the category -->
+    {% if item.categories[0] %}
+        {% unless categories contains item.categories[0] %}
+            {% assign categories = categories | push: item.categories[0] %}
+        {% endunless %}
+    {% endif %}
+
+    <!-- Get the sub-category -->
+    {% if item.categories[1] %}
+        {% unless subCategories contains item.categories[1] %}
+            {% assign subCategories = subCategories | push: item.categories[1] %}
+        {% endunless %}
+    {% endif %}
+
+    <!-- Get the tags -->
+    {% if item.tags %}
+        {% for tag in item.tags %}
+            {% unless tags contains tag %}
+                {% assign tags = tags | push: tag %}
+            {% endunless %}
+        {% endfor %}
+    {% endif %}
+
+{% endfor %}
+
+
+
+
