@@ -3,7 +3,7 @@
 title: Bruschetta 
 image:
 categories: [Recipes]
-tags: [appetizers, vegetarian]     # TAG names should always be lowercase
+tags: [appetizers, vegetarian, vegan]     # TAG names should always be lowercase
 last_modified: 2018-01-01
 cookingTime: 60 # recipe time in minutes
 sourceLink: 
@@ -19,7 +19,7 @@ ingredients:
 - 1 Baguette French Bread
 
 optional_ingredients:
-- 1/4 Cup Olive Oil (Optional)
+- 1/4 Cup Olive Oil
 
 directions:
 - Cut a small cross in the bottom of each tomato to help remove skin.
@@ -33,3 +33,5 @@ directions:
 - Optional - Coat one side of the bread slices with olive oil and place oil side down on a baking sheet. Toast the slices in the oven at 450f for approx. 5 mins. Serve the bread oiled side up.
 
 ---
+
+Removing the tomato seeds is super annoying, but the effort is worth it.

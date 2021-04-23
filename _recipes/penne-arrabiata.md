@@ -34,3 +34,5 @@ directions:
 - Remove chicken, and cut into slices. Toss the chicken slices into the sauce, and simmer for about 10 minutes. Stir in the cooked penne, simmer for a few more minutes to soak up the flavor, then serve.
 
 ---
+
+A really hearty restaurant grade pasta dish. Pay attention not to overcook the chicken.

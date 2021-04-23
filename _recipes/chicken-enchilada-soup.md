@@ -38,3 +38,5 @@ directions:
 - Serve with crumbled tortilla chips & top w/ grated cheese. 
 
 ---
+
+A really hearty soup recipe. Good for impressing people.

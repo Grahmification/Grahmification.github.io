@@ -6,7 +6,7 @@ categories: [Recipes]
 tags: [sides, vegetarian]     # TAG names should always be lowercase
 last_modified: 2018-01-01
 cookingTime: 30 # recipe time in minutes
-sourceLink: 
+sourceLink: https://www.allrecipes.com/recipe/232363/chef-johns-bourbon-glazed-carrots/
 
 ingredients:
 - 1/4 Cup Butter
@@ -18,6 +18,7 @@ ingredients:
 - Black pepper to taste
 
 optional_ingredients:
+- Fresh thyme leaves for garnish
 
 directions:
 - Melt butter in a heavy skillet over medium-high heat. 

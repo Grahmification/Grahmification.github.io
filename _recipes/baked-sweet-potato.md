@@ -3,7 +3,7 @@
 title: Baked Sweet Potato
 image:
 categories: [Recipes]
-tags: [sides, vegetarian]     # TAG names should always be lowercase
+tags: [sides, vegetarian, vegan]     # TAG names should always be lowercase
 last_modified: 2016-01-01
 cookingTime: 45 # recipe time in minutes
 sourceLink: 

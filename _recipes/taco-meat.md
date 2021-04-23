@@ -23,7 +23,7 @@ directions:
 - Drain fat.
 - Add tomato paste + a little water so meat is not dry.
 - Season to taste.
-- Can combine with bean & rice burrito mix to make the super burrito
+- Can combine with bean & rice burrito mix to make the super burrito.
 
 ---
 
