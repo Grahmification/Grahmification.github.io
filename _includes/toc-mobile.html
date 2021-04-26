@@ -1,0 +1,10 @@
+<!-- Table of contents for mobile devices  -->
+
+{% if include.enable %}
+<div id="mobile-toc-wrapper" class="pl-0 pr-4 mb-5">
+    <span class="pl-3 pt-2 mb-2">
+    {{- site.data.label.panel.toc | default: 'Contents' -}}
+    </span>
+    <nav id="toc" data-toggle="toc"></nav>
+</div>
+{% endif %}

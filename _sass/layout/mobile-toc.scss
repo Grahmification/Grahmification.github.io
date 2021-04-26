@@ -1,0 +1,27 @@
+/*
+  Styling for the mobile bootstrap TOC
+*/
+
+/* Hide when window is large */
+@media all and (min-width: 1199px) {
+  #mobile-toc-wrapper {
+    display: none;
+  }
+}
+
+//default unselected styling
+#mobile-toc-wrapper .nav>li>a {
+  display: block;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted-color);
+  border-bottom: 0px;
+}
+
+//disable styling for selected index - only want hover to work
+#mobile-toc-wrapper .nav-link.active, 
+#mobile-toc-wrapper .nav > li > a:focus{
+  color: var(--text-muted-color) !important;
+  border-left-style: none;
+}
