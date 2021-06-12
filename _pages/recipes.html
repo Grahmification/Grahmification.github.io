@@ -32,23 +32,8 @@ permalink: /recipes/
 <!-- Get Collection Metadata -->
 {% include get-collection-data.html collection=recipes %}
 
-<!-- tags -->
-{% if tags.size > 0 %}
-<div id="filterContainer" class="post-tags text-muted" style="font-size: 0.85rem;">
-  
-  <i class="fa fa-tags fa-fw mr-1"></i>
-  <div class="post-tag no-text-decoration" onclick="filterSelection('all')">
-    all
-  </div>
-
-  {% for tag in tags %}
-    <div class="post-tag no-text-decoration" onclick="filterSelection('{{- tag -}}')">
-      {{- tag -}}
-    </div>
-  {% endfor %}
-
-</div>
-{% endif %}
+<!-- tag filtering -->
+{% include filter-container.html filters=tags %}
 
 <!--List recipe previews-->
 <div id="post-list">
@@ -56,67 +41,3 @@ permalink: /recipes/
   {% include recipe-preview.html recipe=post %}
 {% endfor %}
 </div> <!-- #post-list -->
-
-
-<script>
-  //https://www.w3schools.com/howto/howto_js_filter_elements.asp
-  filterSelection("all") //select all by default
-
-  function filterSelection(c) {
-    var x, i;
-    x = $(".filter-object")
-    // Add the "hidden" class (display:none) to the filtered elements, and remove the "hiden" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-      var tags = x[i].getAttribute("data-filters").split(',');
-      var show = false;
-
-      for (var j = 0; j < tags.length; j++) {
-        if(tags[j] == c || c == "all") { 
-          show = true; 
-          break;
-        }
-      }
-
-      w3AddClass(x[i], "hidden");
-      if (show) w3RemoveClass(x[i], "hidden");
-    }
-  }
-
-  // Show filtered elements
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-      }
-    }
-  }
-  
-  // Hide elements that are not selected
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-  
-  // Add active class to the current control button (highlight it)
-  //var btnContainer = document.getElementById("filterContainer");
-  //var btns = btnContainer.getElementsByClassName("post-tag");
-  var btns = $("#filterContainer").find(".post-tag")
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-
-  </script>

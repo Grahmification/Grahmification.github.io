@@ -1656,3 +1656,15 @@ $sidebar-display: "sidebar-display";
     margin-left: 41px;
   }
 }
+
+/* Needed for filtering */
+
+/* The "hidden" class is added to the filtered elements */
+.hidden {
+  display: none;
+}
+
+//selected filter button styling
+#filter-container .filter-button.active{
+  color: #d2603a;
+}

@@ -1,0 +1,25 @@
+<!--
+  A filter selection container for filtering posts on a page
+ -->
+ {% assign filters = include.filters %}
+
+<!-- draw the filter container if needed -->
+{% if filters.size > 0 %}
+<div id="filter-container" class="post-tags text-muted" style="font-size: 0.85rem;">
+  
+  <i class="fa fa-tags fa-fw mr-1"></i>
+  <div id="filter-button-all" class="post-tag no-text-decoration filter-button" onclick="filterSelection('all')">
+    all
+  </div>
+
+  {% for filter in filters %}
+    <div class="post-tag no-text-decoration filter-button" onclick="filterSelection('{{- filter -}}')">
+      {{- filter -}}
+    </div>
+  {% endfor %}
+
+</div>
+{% endif %}
+
+<!-- javascript functionality -->
+<script src="{{ '/assets/js/_utils/filter.js' | relative_url }}"></script>

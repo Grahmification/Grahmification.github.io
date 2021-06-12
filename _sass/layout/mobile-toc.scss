@@ -25,14 +25,3 @@
   color: var(--text-muted-color) !important;
   border-left-style: none;
 }
-
-
-/* The "show" class is added to the filtered elements */
-.hidden {
-  display: none;
-}
-
-//update the selected post tag
-.post-tag.active{
-  color: #d2603a;
-}
