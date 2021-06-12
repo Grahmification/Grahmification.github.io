@@ -3,7 +3,7 @@
  -->
 {% assign post = include.recipe %}
 
-<div class="post-preview">
+<div class="post-preview filter-object" data-filters={{post.tags | join: ","}}>
   
 <div class="container" style="padding-left: 0; padding-right: 0;">
   <div class="row">
