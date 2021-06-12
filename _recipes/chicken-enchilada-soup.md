@@ -3,7 +3,7 @@
 title: Chicken Enchilada Soup
 image:
 categories: [Recipes]
-tags: [mains, chicken, soups]     # TAG names should always be lowercase
+tags: [mains, chicken, soups, mexican]     # TAG names should always be lowercase
 last_modified: 2016-01-01
 cookingTime: 60 # recipe time in minutes
 sourceLink:

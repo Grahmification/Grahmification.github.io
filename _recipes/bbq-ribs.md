@@ -3,7 +3,7 @@
 title: BBQ Ribs
 image:
 categories: [Instant-Pot Recipes]
-tags: [mains, pork]     # TAG names should always be lowercase
+tags: [mains, pork, bbq]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 45 # recipe time in minutes
 sourceLink: https://www.wellplated.com/instant-pot-ribs/

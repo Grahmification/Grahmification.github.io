@@ -3,7 +3,7 @@
 title: Taco Meat
 image:
 categories: [Recipes]
-tags: [mains, beef]     # TAG names should always be lowercase
+tags: [mains, beef, mexican]     # TAG names should always be lowercase
 last_modified: 2016-01-01
 cookingTime: 30 # recipe time in minutes
 sourceLink: 

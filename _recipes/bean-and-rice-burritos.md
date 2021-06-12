@@ -3,7 +3,7 @@
 title: Bean & Rice Burritos
 image:
 categories: [Recipes]
-tags: [mains, vegetarian, vegan]     # TAG names should always be lowercase
+tags: [mains, vegetarian, vegan, mexican]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 30 # recipe time in minutes
 sourceLink: 
