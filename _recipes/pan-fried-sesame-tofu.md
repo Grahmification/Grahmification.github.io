@@ -4,7 +4,7 @@ title: Pan Fried Sesame Tofu
 image:
 categories: [Recipes]
 tags: [mains, vegetarian]     # TAG names should always be lowercase
-last_modified: 2021-06-14
+last_modified: 2021-08-02
 cookingTime: 60 # recipe time in minutes
 sourceLink: https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/
 
@@ -38,6 +38,7 @@ directions:
 - Add the broccoli to the hot skillet and briefly stir fry until slightly browned on the edges. Don't worry if it's not cooked through yet, it will warm through after adding the sauce. Lower the heat to medium-low.
 - Give the bowl of sauce a good stir, then pour it into the skillet with the broccoli. Stir and cook until the sauce begins to bubble and thicken (this should happen very quickly). Once thickened, turn off the heat and stir in the cooked tofu cubes.
 - Serve the tofu and broccoli over a bed of cooked sticky rice, topped with sliced green onions.
+- This meal is best if let sit for a few minutes after cooking. The crust on the tofu will harden up more.
 
 ---
 
