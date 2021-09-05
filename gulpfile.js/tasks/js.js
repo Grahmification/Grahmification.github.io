@@ -59,7 +59,9 @@ const categoriesJs = () => {
 const pageJs = () => {
   return concatJs([
       `${JS_ROOT}/_commons/*.js`,
-      `${JS_ROOT}/_utils/smooth-scroll.js`
+      `${JS_ROOT}/_utils/smooth-scroll.js`,
+      //added in to allow tag filtering
+      `${JS_ROOT}/_utils/filter.js`
     ], 'page'
   );
 };
