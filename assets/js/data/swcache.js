@@ -5,16 +5,17 @@ layout: compress
 ---
 
 const include = [
-  /* --- CSS --- */
 
+  /* --- CSS --- */
   '{{ "/assets/css/style.css" | relative_url }}',
 
   /* --- Javascripts --- */
-  '{{ "/assets/js/dist/home.min.js" | relative_url }}',
-  '{{ "/assets/js/dist/page.min.js" | relative_url }}',
-  '{{ "/assets/js/dist/post.min.js" | relative_url }}',
-  '{{ "/assets/js/dist/categories.min.js" | relative_url }}',
-  '{{ "/assets/js/data/search.json" | relative_url }}',
+  {% assign js_path = "/assets/js" | relative_url %}
+  '{{ js_path }}/dist/home.min.js',
+  '{{ js_path }}/dist/page.min.js',
+  '{{ js_path }}/dist/post.min.js',
+  '{{ js_path }}/dist/categories.min.js',
+  '{{ js_path }}/data/search.json',
   '{{ "/app.js" | relative_url }}',
   '{{ "/sw.js" | relative_url }}',
 
@@ -27,7 +28,6 @@ const include = [
 
 
   /* --- Icons --- */
-
   {%- capture icon_url -%}
     {{ "/assets/img/favicons" | relative_url }}
   {%- endcapture -%}
@@ -52,10 +52,24 @@ const include = [
   '{{ icon_url }}/browserconfig.xml'
 ];
 
-const exclude = [
-  {%- if site.google_analytics.pv.proxy_url and site.google_analytics.pv.enabled -%}
-    '{{ site.google_analytics.pv.proxy_url }}',
-  {%- endif -%}
-  '/assets/js/data/pageviews.json',
-  '/img.shields.io/'
+/* The request url with below domain will be cached */
+const allowedDomains = [
+  {% if site.google_analytics.id != '' %}
+    'www.googletagmanager.com',
+    'www.google-analytics.com',
+  {% endif %}
+
+  '{{ site.url | split: "//" | last }}',
+
+  'fonts.gstatic.com',
+  'fonts.googleapis.com',
+  'cdn.jsdelivr.net',
+  'polyfill.io'
+];
+
+/* Requests that include the following path will be banned */
+const denyUrls = [
+  {% if site.google_analytics.pv.cache_path %}
+    '{{ site.google_analytics.pv.cache_path | absolute_url }}'
+  {% endif %}
 ];
