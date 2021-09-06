@@ -4,7 +4,7 @@ layout: compress
 # The list to be cached by PWA
 ---
 
-const include = [
+const resource = [
 
   /* --- CSS --- */
   '{{ "/assets/css/style.css" | relative_url }}',
