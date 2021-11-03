@@ -365,7 +365,17 @@ footer {
   img[data-src] {
     margin: 0.5rem 0;
   }
-
+ 
+  /* --- custom mod for whole row image captions --- */
+  em {
+      display: block;
+      text-align: center;
+      font-style: normal;
+      font-size: 80%;
+      padding: 0;
+      color: #6d6c6c;
+  }
+  
   @mixin img-caption {
     + em {
       display: block;
