@@ -16,7 +16,6 @@ timezone: America/Vancouver
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
 title: Graham Kerr                          # the main title
-
 tagline: A simple personal website   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
@@ -25,12 +24,6 @@ description: >-                        # used by seo meta and the atom feed
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://Grahmification.github.io'
 
-github:
-  username: Grahmification             # change to your github username
-
-twitter:
-  username: Grahmification            # change to your twitter username
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -38,12 +31,8 @@ social:
   email: kerr.graham.d@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/github       # change to your github homepage
+    - https://github.com/Grahmification
     - https://www.linkedin.com/in/kerrgraham
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://twitter.com/username      # change to your twitter homepage
-
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 # --------------------------
@@ -181,3 +170,17 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# Github addin settings
+
+githup_repos:
+  sort_by: pushed # sort_by options: pushed, stars
+  limit: 6
+  exclude:
+    archived: false
+    forks: true
+    repos:
+    # - add a repo-name to exlude it specifically
+
+plugins:
+  - "jekyll-github-metadata"

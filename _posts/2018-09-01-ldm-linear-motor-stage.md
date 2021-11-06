@@ -6,9 +6,9 @@ tags: [design, cad]     # TAG names should always be lowercase
 thumbnail: /files/images/X-LDM-stage-lineup-thumbnail.jpg
 ---
 
-{% capture imagePath %}/files/images{% endcapture %}
-
 The [LDM series](https://www.zaber.com/products/linear-stages/X-LDM-AE) of linear motor stages was one of my first projects as a lead product manager. The goal of this product lineup to lower the barrier to entry for ultra-precision nanometer level motion control. Due to the integrated controller, these stages are the first stages in the world capable of single nanometer movements that can also be set up in seconds. It's remarkable to plug in one of these stages and immediately command 25nm movements with the knob.
+
+{% capture imagePath %}/files/images{% endcapture %}
 
 ![LDM Series Lineup]({{ imagePath }}/X-LDM-stage-lineup.png){: width="500"} 
 _LDM stages are offered in 3 travel lengths: 60, 110, and 210mm_

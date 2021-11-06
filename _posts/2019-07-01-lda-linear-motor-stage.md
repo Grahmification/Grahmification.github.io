@@ -6,9 +6,9 @@ tags: [design, cad]     # TAG names should always be lowercase
 thumbnail: /files/images/X-LDA-stage-lineup-thumbnail.jpg
 ---
 
-{% capture imagePath %}/files/images{% endcapture %}
-
 The [LDA series](https://www.zaber.com/products/linear-stages/X-LDA-AE) of compact direct drive stages was a project I managed the development of throughout 2019. The goal of this project was to retain as much of the precision of the [LDM series stages]({% post_url 2018-09-01-ldm-linear-motor-stage %}) as possible while significantly shrinking the form factor, further expanding Zaber's offering for easy to use nanometer level precision stages.
+
+{% capture imagePath %}/files/images{% endcapture %}
 
 ![LDA Series Lineup]({{ imagePath }}/X-LDA-stage-lineup.png){: width="400"} 
 _LDA stages are offered in 3 travel lengths: 25, 75, and 150mm_

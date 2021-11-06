@@ -1678,3 +1678,72 @@ $sidebar-display: "sidebar-display";
 #filter-container .filter-button.active{
   color: #d2603a;
 }
+
+
+//github repo card
+.repo-language-color {
+  filter: brightness(125%) !important;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 4px;
+  width: 12px;
+}
+
+#github-projects { 
+  margin-right: -8px;
+  margin-left: -8px;
+  
+  > [class*="col-"] {
+    padding-right: 8px!important;
+    padding-left: 8px !important;
+  }
+  
+  h3 {
+    font-size: 16px;
+    padding-top: 0rem;
+    margin-top: 0px;
+  }
+
+  .card {
+    border-color: var(--card-border-color);
+    background-color: var(--card-bg);
+    box-shadow: 0 0 5px 0 var(--card-box-shadow);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    h3 {
+      color: var(--text-color);
+    }
+    &:hover {
+      -webkit-transform: translate3d(0, -3px, 0);
+      transform: translate3d(0, -3px, 0);
+      box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .stat-text {
+    font-size: 12px !important;
+    color: var(--text-color) !important;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  a {
+    border-bottom-style: none;
+    //color: var(--text-color);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}

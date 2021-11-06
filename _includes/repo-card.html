@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-body">
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="mb-1">
+        <a href="{{ repository.html_url }}">
+          <i class="fab fa-github-square mr-1 v-align-middle"></i>
+          {{ repository.name }}
+        </a>
+      </h1>
+    </div>
+
+    <p class="text">{{ repository.description }}</p>
+    
+    <div class="d-flex stat-text">
+      {% if repository.language %}
+          <span class="repo-language-color ml-0 mr-1" style="background-color:{{ site.data.language_colors[repository.language]["color"] }}"></span>
+          <span class="mr-3 text-muted" itemprop="programmingLanguage">{{ repository.language }}</span>
+      {% endif %}
+      {% if repository.stargazers_count %}
+        <a href="{{ repository.html_url }}/stargazers" class="d-inline-block text-muted mr-4">
+          <i class="far fa-star mr-1"></i>{{ repository.stargazers_count }}
+        </a>
+      {% endif %}
+      {% if repository.forks_count %}
+        <a href="{{ repository.html_url }}/network/members" class="d-inline-block text-muted mr-4">
+          <i class="fas fa-code-branch mr-1"></i>{{ repository.forks_count }}
+        </a>
+      {% endif %}
+    </div>
+
+  </div>  
+</div>
