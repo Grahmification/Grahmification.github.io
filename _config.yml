@@ -172,6 +172,7 @@ jekyll-archives:
     category: /categories/:name/
 
 # Github addin settings
+repository: Grahmification/Grahmification.github.io
 
 githup_repos:
   sort_by: pushed # sort_by options: pushed, stars
