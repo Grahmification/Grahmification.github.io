@@ -2,6 +2,7 @@
 -
   type: github
   icon: 'fab fa-github-alt'
+  username: Grahmification
 -
   type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
@@ -31,3 +32,4 @@
 # -
 #   type: twitter
 #   icon: 'fab fa-twitter'
+#   username: Grahmification    
