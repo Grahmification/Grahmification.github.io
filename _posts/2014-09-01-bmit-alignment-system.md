@@ -1,5 +1,5 @@
 ---
-title: Robotic Alignment & Visualization System
+title: Robotic Alignment and Visualization System
 date: 2014-09-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Canadian Light Source]
 tags: [cad, coding]     # TAG names should always be lowercase
