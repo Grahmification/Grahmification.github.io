@@ -8,10 +8,6 @@ sidebar:
     url: /categories/
     icon: fas fa-stream
 
-  - title: "Tags"
-    url: /tags/
-    icon: fas fa-tags
-
   - title: "Archives"
     url: /archives/
     icon: fas fa-archive
