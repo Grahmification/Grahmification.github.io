@@ -38,9 +38,6 @@ _The central motor in the LDA is the most space optimal configuration_
 
 The LDA design was based around M6 mounting holes on a standard 25mm breadboard grid pattern, a unique feature compared to similar stages. This was a design decision intentionally chosen to favor Zaber's "Lego brick" modular ecosystem over smaller M3 or M4 mounting holes, which would have resulted in a smaller form factor and potentially a more OEM friendly product. Breadboards are extremely common for photonics applications where stages like the LDA are typically used, and direct mounting simplifies integration while also providing optimal flatness and parallelism by removing the need for adaptor plates.
 
-![LDA Accuracy Plot]({{ imagePath }}/X-LDA-AE Dimension Drawing.png){: width="800"} 
-_The M6 mounting holes on the base are one of the visually defining features of the LDA_
-
 ### XY Assemblies
 
 LDA stages are designed to bolt directly together in XY configurations, or on top of LDM stages. Again, direct mounting is ideal for optimal flatness and parallelism. Similar to the LDM, the carriage and base include holes for dowel pins to obtain orthogonal alignment. These down pin features are designed to mate directly with other LDA or LDM stages.
@@ -89,5 +86,7 @@ No project is complete without recognizing what you've learned along the way.
 ## Conclusion
 
 The LDA series stage lineup nicely complements the LDM series stages to fill out Zaber's high accuracy stage offerings. Precision specs are very comparable to the LDM with a significant size decrease. This project was particularly fun because it allowed application of many lessons learned during the LDM project. There are many subtle details in the LDA design that were inherited from things I wished I could've re-designed on the LDM. In particular, LDA stages are much easier to assemble because of these design improvements.
+
+_Note: The content of this article is intentionally limited to respect confidential information of Zaber Technologies._
 
 

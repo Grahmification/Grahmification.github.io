@@ -125,4 +125,4 @@ No project is complete without recognizing what you've learned along the way.
 
 LDM stages provide a unique addition to Zaber's motion control lineup and the motion control industry as a whole. These stages have increased the precision Zaber can offer from a linear stage by nearly an order of magnitude. More importantly, they lower the bar for ultra-precision motion control from both a price and ease of use standpoint. A user with almost no motion control experience can have one of these stages performing 25nm moves in a matter of minutes.
 
-However, I leave judgement about these stages up to the reader. Of course I think they are great. I lead the project :)
+_Note: The content of this article is intentionally limited to respect confidential information of Zaber Technologies._

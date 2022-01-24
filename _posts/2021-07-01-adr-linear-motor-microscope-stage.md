@@ -84,4 +84,4 @@ No project is complete without recognizing what you've learned along the way.
 
 The ADR microscope stage is an exciting addition to the world of high throughput imaging. It will be interesting to see if this technology becomes the gold standard.
 
-
+_Note: The content of this article is intentionally limited to respect confidential information of Zaber Technologies._
