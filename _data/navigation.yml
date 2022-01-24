@@ -12,6 +12,10 @@ sidebar:
     url: /archives/
     icon: fas fa-archive
 
+  - title: "Useful Info"
+    url: /reference/
+    icon: fas fa-info
+    
   - title: "Recipes"
     url: /recipes/
     icon: fas fa-hamburger
