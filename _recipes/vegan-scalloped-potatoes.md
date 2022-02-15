@@ -3,7 +3,7 @@
 title: Vegan Scalloped Potatoes
 image:
 categories: [Recipes]
-tags: [sides, vegatarian, vegan]     # TAG names should always be lowercase
+tags: [sides, vegetarian, vegan]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 90 # recipe time in minutes
 sourceLink: https://shaneandsimple.com/creamy-vegan-scalloped-potatoes/

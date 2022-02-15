@@ -3,7 +3,7 @@
 title: Vegetarian Spaghetti Sauce
 image:
 categories: [Recipes]
-tags: [mains, vegatarian, pasta, vegan]     # TAG names should always be lowercase
+tags: [mains, vegetarian, pasta, vegan]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 30 # recipe time in minutes
 sourceLink: 
@@ -34,4 +34,4 @@ directions:
 
 ---
 
-Super fast and easy to make.
+Super fast and easy to make. Probably better recipes out there, but this is decent and easy. 

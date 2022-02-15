@@ -3,7 +3,7 @@
 title: Chilled Asian Ramen Salad
 image:
 categories: [Recipes]
-tags: [sides, vegatarian, vegan, salads]     # TAG names should always be lowercase
+tags: [sides, vegetarian, vegan, salads]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 15 # recipe time in minutes
 sourceLink: https://www.tablefortwoblog.com/ridiculously-amazing-asian-ramen-salad/

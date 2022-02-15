@@ -3,7 +3,7 @@
 title: Pan Roasted Broccoli
 image:
 categories: [Recipes]
-tags: [sides, vegatarian, vegan]     # TAG names should always be lowercase
+tags: [sides, vegetarian, vegan]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 20 # recipe time in minutes
 sourceLink: 

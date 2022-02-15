@@ -3,7 +3,7 @@
 title: Sautéed Brussels Sprouts
 image:
 categories: [Recipes]
-tags: [sides, vegatarian, vegan]     # TAG names should always be lowercase
+tags: [sides, vegetarian, vegan]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 20 # recipe time in minutes
 sourceLink: https://www.wellplated.com/sauteed-brussels-sprouts/
@@ -25,3 +25,5 @@ directions:
 - Remove the pan from the heat. Stir in the vinegar, then the pecans. Let the residual heat of the skillet toast the nuts, stirring them very often so that they toast evenly on all sides and do not burn (if they aren’t toasting, return the skillet to low heat). As soon as the nuts are toasted, transfer the sprouts to a serving plate and sprinkle with cheese. Enjoy hot.
 
 ---
+
+Great side for a wide variety of meals. 

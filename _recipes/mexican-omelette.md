@@ -3,7 +3,7 @@
 title: Mexican Omelette
 image:
 categories: [Recipes]
-tags: [mains, vegatarian, breakfast, mexican]     # TAG names should always be lowercase
+tags: [mains, vegetarian, breakfast, mexican]     # TAG names should always be lowercase
 last_modified: 2020-01-01
 cookingTime: 30 # recipe time in minutes
 sourceLink: 
