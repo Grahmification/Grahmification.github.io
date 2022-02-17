@@ -70,6 +70,11 @@ The page contains a bunch of random links and information I've found useful. The
 - [FEMM](https://www.femm.info/wiki/HomePage) - open source 2D magnetics FEA software
 - [ONELAB](https://onelab.info/) - open source 3D FEA software
 
+- [funfun.io](https://www.funfun.io/1/#/home) - really interesting plotting software combining javascript, html and excel 
+
+- [3DF Zephyr](https://www.3dflow.net/3df-zephyr-photogrammetry-software/) - free photogrammetry software (turn pictures into 3D models)
+- [Meshmixer](https://www.meshmixer.com/) - free, very powerful 3D print editing software
+
 ## Misc
 ---
 - [12ft Ladder](https://12ft.io/) - disables website paywalls
