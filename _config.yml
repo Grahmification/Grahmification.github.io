@@ -34,6 +34,12 @@ social:
     - https://github.com/Grahmification
     - https://www.linkedin.com/in/kerrgraham
 
+# link to an website serving images for the purpose of counting page views
+page_count:
+  #do not enable without a url
+  enabled: true
+  base_url: https://amazing-zenith-parsley.glitch.me
+
 google_site_verification: google_meta_tag_verification # change to your verification string
 # --------------------------
 

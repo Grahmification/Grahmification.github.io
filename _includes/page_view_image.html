@@ -1,0 +1,11 @@
+<!--
+  Displays an image for the purpose of counting page views by an external image server. Only active on published site. 
+  Image must have the class "view-count" to work properly with lazy loading. See lozad.html.
+ -->
+
+{% if site.page_count.enabled and jekyll.environment == 'production' %}
+    {% assign baseurl = site.page_count.base_url %}
+    {% assign file_name = include.file_name %}
+    {% assign fullurl = baseurl | append: '/' | append: file_name | append: '.svg'  %}
+    <img class="view-count" src="{{ fullurl }}" onerror="this.style.display='none'">
+{% endif %}
