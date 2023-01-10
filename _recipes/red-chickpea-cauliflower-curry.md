@@ -3,7 +3,7 @@
 title: Red Chickpea Cauliflower Curry
 image:
 categories: [Recipes]
-tags: [mains, vegetarian, vegan]     # TAG names should always be lowercase
+tags: [mains, vegetarian, vegan, indian]     # TAG names should always be lowercase
 last_modified: 2021-10-16
 cookingTime: 60 # recipe time in minutes
 sourceLink: https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/
