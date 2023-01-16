@@ -25,6 +25,7 @@ The page contains a bunch of random links and information I've found useful. The
 - [OpenCV](https://github.com/opencv/opencv) - computer vision library
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - web scraping tool
 - [openpyxl](https://pypi.org/project/openpyxl/) - excel import/export
+- [Python Library](https://www.scaler.com/topics/python-libraries/) - python library functions
 
 #### Javascript:
 - [Leaflet](https://github.com/Leaflet/Leaflet) - map making ![GitHub](https://img.shields.io/github/license/Leaflet/Leaflet)
