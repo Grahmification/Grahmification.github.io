@@ -186,7 +186,8 @@ githup_repos:
   exclude:
     archived: false
     forks: true
-    repos:
+    repos: 
+      - Grahmification # Ignore profile readme
     # - add a repo-name to exlude it specifically
 
 plugins:
