@@ -108,7 +108,3 @@ This data is embedded from [Trading Economics](https://tradingeconomics.com/indi
 
 ### Unemployment Rates
 {% include embed-charts-trading-econ.html indicator="usurtot" d1="19960228" d2="20200222&" url2="/canada/unemployment-rate" %}
-
-{% include tree.html %}
-
-<img src="https://amazing-zenith-parsley.glitch.me/page.svg" />
