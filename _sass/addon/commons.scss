@@ -607,9 +607,18 @@ $sidebar-display: "sidebar-display";
   left: 0;
   height: 100%;
   overflow-y: auto;
-  width: $sidebar-width-medium;
+  width: $sidebar-width;
   z-index: 99;
   background: var(--sidebar-bg);
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   a {
     @include sidebar-links;
@@ -617,13 +626,13 @@ $sidebar-display: "sidebar-display";
     &:hover {
       @include no-text-decoration;
 
-      color: #fff;
+      color: var(--sidebar-hover-color);
     }
   }
 
   #avatar {
     &:hover > a {
-      border-color: #fff;
+      border-color: var(--sidebar-hover-color);
     }
 
     > a {
@@ -673,39 +682,46 @@ $sidebar-display: "sidebar-display";
     user-select: none;
   }
 
-  .nav-link {
-    border-radius: 0;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .nav-item {
-    text-align: center;
-    display: table;
-    height: $tab-height;
-    &:hover {
-      .nav-link {
-        color: #f8f9facf;
-      }
-    }
-    &.active {
-      .nav-link {
-        color: #fcfcfc;
-      }
-    }
-  }
-
   ul {
     margin-bottom: 2rem;
-    padding-left: 0;
 
-    li {
+    li.nav-item {
+      opacity: 0.9;
       width: 100%;
-    } // li
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
 
+      a.nav-link {
+        @include pt-pb(0.6rem);
+
+        display: flex;
+        align-items: center;
+        border-radius: 0;
+        font-weight: 600;
+
+        i {
+          font-size: 75%;
+          opacity: 0.8;
+          margin-right: 1.5rem;
+        }
+
+        span {
+          font-size: 90%;
+          letter-spacing: 2px;
+        }
+      }
+
+      &:hover {
+        .nav-link {
+          color: var(--sidebar-hover-color);
+        }
+      }
+      &.active {
+        .nav-link {
+          color: var(--sidebar-active-color);
+        }
+      }
+    }
   } // ul
 
   .sidebar-bottom {
@@ -751,7 +767,7 @@ $sidebar-display: "sidebar-display";
 
     a:hover,
     #mode-toggle-wrapper i:hover {
-      color: #fff;
+      color: var(--sidebar-hover-color);
     }
 
   } // .sidebar-bottom
@@ -787,7 +803,7 @@ $sidebar-display: "sidebar-display";
   height: $topbar-height;
   position: fixed;
   top: 0;
-  left: 260px; /* same as sidebar width */
+  left: $sidebar-width;
   right: 0;
   transition: top 0.2s ease-in-out;
   z-index: 50;
@@ -1023,6 +1039,9 @@ $sidebar-display: "sidebar-display";
 }
 
 /* --- Responsive Design --- */
+// {sidebar, content, panel} >= 1200px screen width
+// {sidebar, content} >= 830px screen width
+// {content} <= 830px screen width
 
 @media all and (max-width: 576px) {
 
@@ -1100,7 +1119,7 @@ $sidebar-display: "sidebar-display";
 
     #topbar-wrapper,
     #main-wrapper {
-      transform: translateX(#{$sidebar-width-medium});
+      transform: translateX(#{$sidebar-width});
     }
 
   }
@@ -1108,8 +1127,8 @@ $sidebar-display: "sidebar-display";
   #sidebar {
     @extend %slide;
 
-    transform: translateX(-#{$sidebar-width-medium}); // hide
-    -webkit-transform: translateX(-#{$sidebar-width-medium});
+    transform: translateX(-#{$sidebar-width}); // hide
+    -webkit-transform: translateX(-#{$sidebar-width});
 
     .cursor {
       -webkit-transition: none;
@@ -1207,7 +1226,7 @@ $sidebar-display: "sidebar-display";
   }
 
   #main-wrapper {
-    margin-left: $sidebar-width-medium;
+    margin-left: $sidebar-width;
   }
 
   .profile-wrapper {
@@ -1261,7 +1280,7 @@ $sidebar-display: "sidebar-display";
 @media all and (min-width: 832px) and (max-width: 1199px) {
 
   #sidebar {
-    width: $sidebar-width-small;
+    width: $sidebar-width;
     .sidebar-bottom {
       a,
       span {
@@ -1274,7 +1293,7 @@ $sidebar-display: "sidebar-display";
   }
 
   #topbar-wrapper {
-    left: 210px;
+    left: $sidebar-width;
   }
 
   #search-results > div {
@@ -1293,7 +1312,7 @@ $sidebar-display: "sidebar-display";
   }
 
   #main-wrapper {
-    margin-left: 210px;
+    margin-left: $sidebar-width;
   }
 
   #breadcrumb {
@@ -1486,8 +1505,6 @@ $sidebar-display: "sidebar-display";
     } // .profile-wrapper (min-width: 1650px)
 
     ul {
-      padding-left: 2.5rem;
-
       > li:last-child {
         > a {
           position: static;

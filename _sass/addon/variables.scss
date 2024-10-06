@@ -4,11 +4,8 @@
 
 /* --- ↓ width and height ---- */
 
-$tab-height: 3.2rem;
-
-$sidebar-width-small: 210px;
-$sidebar-width-medium: 260px;
-$sidebar-width-large: 350px;
+$sidebar-width: 260px; /* the basic width */
+$sidebar-width-large: 300px; /* screen width: >= 1650px */
 
 $topbar-height: 3rem;
 
