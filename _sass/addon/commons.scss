@@ -692,7 +692,25 @@ $sidebar-display: "sidebar-display";
       padding-left: 1.5rem;
       padding-right: 1.5rem;
 
-      a.nav-link {
+      // For child tab lists
+      ul {
+        margin-bottom: 0rem;
+        margin-left: 2rem;
+
+        li.nav-item {
+          width: 100%;
+          padding-left: 0rem;
+          padding-right: 0;
+        }
+      }
+
+      &.active {
+        .nav-link {
+          color: var(--sidebar-active-color);
+        }
+      }
+
+      .nav-link {
         @include pt-pb(0.6rem);
 
         display: flex;
@@ -700,29 +718,44 @@ $sidebar-display: "sidebar-display";
         border-radius: 0;
         font-weight: 600;
 
-        i {
-          font-size: 75%;
-          opacity: 0.8;
-          margin-right: 1.5rem;
+        &:hover {
+          color: var(--sidebar-hover-color);
+        }
+
+        // When nav item is expanded
+        &[aria-expanded='true'] {
+          i.arrow {
+            transform: rotate(90deg);
+          }
         }
 
         span {
           font-size: 90%;
           letter-spacing: 2px;
         }
+
+        i {
+          font-size: 75%;
+          opacity: 0.8;
+          margin-right: 1.5rem;
+
+          // Custom class for expander arrow
+          &.arrow {
+            margin-left: 1.5rem;
+            transition: transform 0.3s ease-in-out;
+          }
+        }
       }
 
-      &:hover {
-        .nav-link {
-          color: var(--sidebar-hover-color);
-        }
+      button.nav-link {
+        background: rgba(0,0,0,0);
+        border: none;
+        outline: none;
+        color: var(--text-color);
       }
-      &.active {
-        .nav-link {
-          color: var(--sidebar-active-color);
-        }
-      }
-    }
+
+
+    } // li.nav-item
   } // ul
 
   .sidebar-bottom {

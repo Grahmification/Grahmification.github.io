@@ -1,16 +1,13 @@
-# navigation tabs on the sidebar
+# Navigation tabs on the sidebar (top level only)
 sidebar:
   - title: "Home"
     url: /
     icon: fas fa-home
 
-  - title: "Categories"
-    url: /categories/
-    icon: fas fa-stream
-
-  - title: "Archives"
-    url: /archives/
-    icon: fas fa-archive
+  - title: "Projects"
+    url: /projects/ # This url is unused
+    icon: fas fa-cogs
+    children: [/categories/, /archives/]
 
   - title: "Useful Info"
     url: /reference/
@@ -24,3 +21,13 @@ sidebar:
     url: /about/
     icon: fas fa-info
 
+# Navigation tabs on the sidebar (child tabs only)
+# Nest children to top level by referencing the link.
+sidebar_children:
+  - title: "Categories"
+    url: /categories/
+    icon: fas fa-stream
+
+  - title: "Archives"
+    url: /archives/
+    icon: fas fa-archive

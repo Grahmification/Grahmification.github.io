@@ -33,12 +33,7 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       {% for tab in site.data.navigation.sidebar %}
-      <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
-        <a href="{{ tab.url | relative_url }}" class="nav-link">
-          <i class="fa-fw {{ tab.icon }}"></i>
-          <span>{{ tab.title | upcase }}</span>
-        </a>
-      </li> <!-- .nav-item -->
+        {% include sidebar-tab.html tab=tab %}
       {% endfor %}
     </ul> <!-- ul.nav.flex-column -->
   </nav>
@@ -82,5 +77,31 @@
     {% endunless %}
 
   </div> <!-- .sidebar-bottom -->
+
+  <!-- Record state of expanded objects -->
+  <script>
+    $(document).ready(function () {
+      $('.nav-expander').on('shown.bs.collapse', function (e) {
+        localStorage.setItem($(e.target).attr('id'), 'show');
+      });
+      $('.nav-expander').on('hide.bs.collapse', function (e) {
+        localStorage.setItem($(e.target).attr('id'), 'collapse');
+      });
+    });
+
+    // Get all items from local storage and iterate over them
+    // Must be outside the ready function or it will be too slow
+    const items = { ...localStorage };
+
+    for (const [key, value] of Object.entries(items)) {
+      if (value == 'show') {
+        $('#' + key).addClass('show');
+        $('#' + key + '-btn').attr('aria-expanded', 'true');
+      } else {
+        $('#' + key).removeClass('show');
+        $('#' + key + '-btn').attr('aria-expanded', 'false');
+      }
+    }
+  </script>
 
 </div><!-- #sidebar -->

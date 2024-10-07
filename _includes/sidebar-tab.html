@@ -1,0 +1,33 @@
+<!-- Sidebar tab item -->
+
+{% assign has_children = include.tab.children.size > 0 %}
+{% assign tab_name = include.tab.title | upcase %}
+{% assign base_tab_id = include.tab.title | downcase | replace: ' ', '-' %}
+
+<li class="nav-item{% if include.tab.url == page.url %}{{ " active" }}{% endif %}">
+  {% unless has_children %}
+    <a href="{{ include.tab.url | relative_url }}" class="nav-link">
+      <i class="fa-fw {{ include.tab.icon }}"></i>
+      <span>{{ tab_name }}</span>
+    </a>
+  {% else %}
+    <button id="{{ base_tab_id }}-exp-btn" class="nav-link" type="button" data-toggle="collapse" data-target="#{{ base_tab_id }}-exp" aria-expanded="false">
+      <i class="fa-fw {{ include.tab.icon }}"></i>
+      <span>{{ tab_name }}</span>
+      <!-- Expand arrow -->
+      <i class="fas fa-fw fa-angle-right arrow"></i>
+    </button>
+
+    <!-- Child tabs -->
+    <div id="{{ base_tab_id }}-exp" class="nav-expander collapse">
+      <ul class="nav">
+        {% for sub-tab in site.data.navigation.sidebar_children %}
+          {% assign tab_id = sub-tab.url %} {% comment %} Compare based on url. {% endcomment %}
+          {% if include.tab.children contains tab_id %}
+            {% include sidebar-tab.html tab=sub-tab %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endunless %}
+</li>
