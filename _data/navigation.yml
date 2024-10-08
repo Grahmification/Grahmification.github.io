@@ -12,7 +12,7 @@ sidebar:
   - title: "Useful Info"
     url: /reference/
     icon: fas fa-info
-    children: [/reference/engineering/, /reference/investing/, /reference/misc/]
+    children: [/reference/engineering/, /reference/investing/, /reference/misc/, /playground/]
 
     
   - title: "Recipes"
@@ -45,3 +45,8 @@ sidebar_children:
   - title: "Misc"
     url: /reference/misc/
     icon: far fa-file-alt
+
+  - title: "Playground"
+    url: /playground/
+    icon: far fa-file-alt
+
