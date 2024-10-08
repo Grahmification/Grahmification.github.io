@@ -12,6 +12,8 @@ sidebar:
   - title: "Useful Info"
     url: /reference/
     icon: fas fa-info
+    children: [/reference/engineering/, /reference/investing/, /reference/misc/]
+
     
   - title: "Recipes"
     url: /recipes/
@@ -31,3 +33,15 @@ sidebar_children:
   - title: "Timeline"
     url: /timeline/
     icon: fas fa-hourglass-half
+
+  - title: "Engineering"
+    url: /reference/engineering/
+    icon: fas fa-code-branch
+
+  - title: "Investing"
+    url: /reference/investing/
+    icon: fas fa-euro-sign
+
+  - title: "Misc"
+    url: /reference/misc/
+    icon: far fa-file-alt

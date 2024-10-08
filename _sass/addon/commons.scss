@@ -690,7 +690,6 @@ $sidebar-display: "sidebar-display";
       opacity: 0.9;
       width: 100%;
       padding-left: 1.5rem;
-      padding-right: 1.5rem;
 
       // For child tab lists
       ul {
@@ -742,6 +741,7 @@ $sidebar-display: "sidebar-display";
           // Custom class for expander arrow
           &.arrow {
             margin-left: 1.5rem;
+            margin-right: 0rem;
             transition: transform 0.3s ease-in-out;
           }
         }
