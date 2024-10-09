@@ -15,16 +15,18 @@ This page contains a bunch of useful links and engineering related information. 
 
 ### Interesting Libraries
 #### C#:
-- [Oxyplot](https://github.com/oxyplot/oxyplot) - amazing 2d plotting library ![GitHub](https://img.shields.io/github/license/oxyplot/oxyplot) 
+- [Oxyplot](https://github.com/oxyplot/oxyplot) - amazing 2d plotting library ![GitHub](https://img.shields.io/github/license/oxyplot/oxyplot)
+- [ScottPlot](https://scottplot.net/) - 2d plotting library specializing in large datasets ![GitHub](https://img.shields.io/github/license/ScottPlot/ScottPlot)
+- [FftSharp](https://github.com/swharden/FftSharp) - A collection of Fast Fourier Transform (FFT) tools ![GitHub](https://img.shields.io/github/license/swharden/FftSharp)
 - [Helix Toolkit](https://github.com/helix-toolkit/helix-toolkit) - super powerful 3D rendering library ![GitHub](https://img.shields.io/github/license/helix-toolkit/helix-toolkit)
 - [Math.NET Numerics](https://github.com/mathnet/mathnet-numerics) - for advanced math ![GitHub](https://img.shields.io/github/license/mathnet/mathnet-numerics)
-- [AForge.NET](http://www.aforgenet.com/) - computer vision, ai, machine learning
-- [Xabe.FFmpeg](https://github.com/tomaszzmuda/Xabe.FFmpeg) - C# FFmpeg port. Audio/video converting.
+- [AForge.NET](http://www.aforgenet.com/) - computer vision, ai, machine learning ![GitHub](https://img.shields.io/github/license/andrewkirillov/AForge.NET)
+- [Xabe.FFmpeg](https://github.com/tomaszzmuda/Xabe.FFmpeg) - C# FFmpeg port. Audio/video converting. ![GitHub](https://img.shields.io/github/license/tomaszzmuda/Xabe.FFmpeg)
 
 #### Python:
-- [OpenCV](https://github.com/opencv/opencv) - computer vision library
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - web scraping tool
-- [openpyxl](https://pypi.org/project/openpyxl/) - excel import/export
+- [OpenCV](https://github.com/opencv/opencv) - computer vision library ![GitHub](https://img.shields.io/github/license/opencv/opencv)
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - web scraping tool ![PyPI - License](https://img.shields.io/pypi/l/beautifulsoup4)
+- [openpyxl](https://pypi.org/project/openpyxl/) - excel import/export ![PyPI - License](https://img.shields.io/pypi/l/openpyxl)
 - [Python Library](https://www.scaler.com/topics/python-libraries/) - python library functions
 
 #### Javascript:
