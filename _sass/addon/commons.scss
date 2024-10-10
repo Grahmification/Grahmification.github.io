@@ -1746,3 +1746,13 @@ $sidebar-display: "sidebar-display";
     text-decoration: none;
   }
 }
+
+.embed-video {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+  aspect-ratio: 16 / 9;
+
+  @extend %rounded;
+  @extend %img-caption;
+}
