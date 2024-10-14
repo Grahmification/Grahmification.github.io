@@ -89,8 +89,8 @@
       });
     });
 
-    // Get all items from local storage and iterate over them
-    // Must be outside the ready function or it will be too slow
+    /* Get all items from local storage and iterate over them */
+    /* Must be outside the ready function or it will be too slow */
     const items = { ...localStorage };
 
     for (const [key, value] of Object.entries(items)) {
