@@ -35,6 +35,9 @@
   /* Sidebar */
   --nav-cursor-color: rgb(183, 182, 182);
   --sidebar-bg: radial-gradient(circle, #242424 0%, #1d1f27 100%);
+  --sidebar-muted-color: rgba(255, 255, 255, 0.5);
+  --sidebar-hover-color: #f8f9facf;
+  --sidebar-active-color: #fff;
 
   /* Top Bar */
   --topbar-text-color: var(--text-color);

@@ -51,13 +51,28 @@
   margin-top: -2.5rem;
 }
 
+%rounded {
+  border-radius: $radius-lg;
+}
+
+%img-caption {
+  + em {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-size: 80%;
+    padding: 0;
+    color: #6d6c6c;
+  }
+}
+
 /* ---------- scss mixin --------- */
 
 @mixin no-text-decoration {
   text-decoration: none;
 }
 
-@mixin sidebar-links($color: rgba(255, 255, 255, 0.5)) {
+@mixin sidebar-links($color: var(--sidebar-muted-color)) {
   color: $color;
   transition: color 0.35s ease-in-out;
   user-select: none;
@@ -78,6 +93,11 @@
 @mixin pl-pr($val) {
   padding-left: $val;
   padding-right: $val;
+}
+
+@mixin pt-pb($val) {
+  padding-top: $val;
+  padding-bottom: $val;
 }
 
 @mixin input-placeholder {

@@ -1,20 +1,19 @@
-# navigation tabs on the sidebar
+# Navigation tabs on the sidebar (top level only)
 sidebar:
   - title: "Home"
     url: /
     icon: fas fa-home
 
-  - title: "Categories"
-    url: /categories/
-    icon: fas fa-stream
-
-  - title: "Archives"
-    url: /archives/
-    icon: fas fa-archive
+  - title: "Projects"
+    url: /projects/ # This url is unused
+    icon: fas fa-cogs
+    children: [/categories/, /timeline/]
 
   - title: "Useful Info"
     url: /reference/
     icon: fas fa-info
+    children: [/reference/engineering/, /reference/investing/, /reference/misc/, /playground/]
+
     
   - title: "Recipes"
     url: /recipes/
@@ -23,4 +22,31 @@ sidebar:
   - title: "About"
     url: /about/
     icon: fas fa-info
+
+# Navigation tabs on the sidebar (child tabs only)
+# Nest children to top level by referencing the link.
+sidebar_children:
+  - title: "Categories"
+    url: /categories/
+    icon: fas fa-stream
+
+  - title: "Timeline"
+    url: /timeline/
+    icon: fas fa-hourglass-half
+
+  - title: "Engineering"
+    url: /reference/engineering/
+    icon: fas fa-code-branch
+
+  - title: "Investing"
+    url: /reference/investing/
+    icon: fas fa-euro-sign
+
+  - title: "Misc"
+    url: /reference/misc/
+    icon: far fa-file-alt
+
+  - title: "Playground"
+    url: /playground/
+    icon: far fa-file-alt
 
