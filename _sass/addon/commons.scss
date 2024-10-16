@@ -1756,3 +1756,34 @@ $sidebar-display: "sidebar-display";
   @extend %rounded;
   @extend %img-caption;
 }
+
+// Embedded webcam pictures
+.embed-webcam-card {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+
+  span {
+    // Center horizontally
+    display: block;
+  }
+
+  img {
+    // Center horizontally
+    max-width: 100%;
+    height: auto;
+    @extend %rounded;
+
+    box-shadow: 0 0 5px 0 var(--card-box-shadow);
+
+    &:hover {
+      box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &:hover {
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
+  }
+}

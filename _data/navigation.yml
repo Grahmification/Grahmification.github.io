@@ -19,6 +19,10 @@ sidebar:
     url: /recipes/
     icon: fas fa-hamburger
 
+  - title: "Outdoors"
+    url: /outdoors/
+    icon: fas fa-tree
+
   - title: "About"
     url: /about/
     icon: fas fa-info
