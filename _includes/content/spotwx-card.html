@@ -1,0 +1,48 @@
+{% assign spotwx_url = 'https://spotwx.com/products/grib_index.php?model=' %}
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 class="mb-1">
+                <i class="fas fa-cloud-sun mr-1 v-align-middle"></i>
+                {{ include.title }}
+            </h3>
+        </div>
+        
+        <p><i class="fas fa-map-marker-alt mr-1 v-align-middle"></i> {{include.lat}}°N {{include.long}}°W</p>
+        <!--
+        <ul>
+            <li>
+                <a href="{{spotwx_url}}sref_pgrb132&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">SREF</a>, 
+                <a href="{{spotwx_url}}nam_awphys&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">NAM</a> 
+                <span class="badge badge-success">3.5D / 12km</span> 
+            </li>
+            <li><a href="{{spotwx_url}}hrrr_wrfprsf&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">HRRR</a> (18Hr/3km)</li>
+            <li><a href="{{spotwx_url}}rap_awp130pgrbf&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">RAP</a> (21Hr/13km)</li>
+            <li><a href="{{spotwx_url}}hrdps_continental&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">HRDPS</a> (2D/2.5km)</li>
+            <li><a href="{{spotwx_url}}nam_awphys&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">NAM</a> (3.5D/12km)</li>
+        </ul>
+        -->
+        <ul>
+            <li>
+                <a href="{{spotwx_url}}sref_pgrb132&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">SREF</a>, 
+                <a href="{{spotwx_url}}nam_awphys&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">NAM</a> 
+                <span class="badge badge-dark">3.5 Day / 12km</span> 
+            </li>
+            <li>
+                <a href="{{spotwx_url}}hrdps_continental&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">HRDPS</a>
+                <span class="badge badge-dark">2 Day / 2.5km</span> 
+            </li>
+            <li>
+                <a href="{{spotwx_url}}hrrr_wrfprsf&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">HRRR</a>
+                <span class="badge badge-dark">18 Hr / 3km</span>
+                <span class="badge badge-success"><i class="fas fa-cloud"></i></span>
+            </li>
+            <li>
+                <a href="{{spotwx_url}}rap_awp130pgrbf&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">RAP</a>
+                <span class="badge badge-dark">21 Hr / 13km </span>
+                <span class="badge badge-success"><i class="fas fa-cloud"></i></span>
+            </li>
+        </ul>
+    </div>  
+</div>

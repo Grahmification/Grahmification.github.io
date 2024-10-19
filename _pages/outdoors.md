@@ -6,10 +6,55 @@ permalink: /outdoors/
 
 This page is a compilation of outdoors & hiking information relevant to Southwestern BC.
 
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+<table>
+  <thead>
+      <tr>
+        <th>Location</th>
+        <th>SREF (3.5D/12km)</th>
+        <th>HRRR (18Hr/3km)</th>
+        <th>RAP (21Hr/13km)</th>
+        <th>HRDPS (2D/2.5km)</th>
+        <th>NAM (3.5D/12km)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% include content/spotwx-tr.html title='North Van (Crown Mtn)' lat='49.40986' long='-123.09245' %}
+    {% include content/spotwx-tr.html title='Vancouver' lat='49.26198' long='-123.06559' %}
+  </tbody>
+</table>
+
+
+
+
 
 ## Weather Conditions
 
 [SpotWX](https://spotwx.com/) is one of the best resources for outdoor weather forecasting. Each model is a little different, and you should learn to read all of them in conjunction.
+
+<div id="github-projects" class="d-sm-flex flex-wrap mb-4">
+  <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+    {% include content/spotwx-card.html title='North Van (Crown Mtn)' lat='49.40986' long='-123.09245' %}
+  </div>
+  <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+    {% include content/spotwx-card.html title='Vancouver' lat='49.26198' long='-123.06559' %}
+  </div>
+  <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+    {% include content/spotwx-card.html title='Vancouver' lat='49.26198' long='-123.06559' %}
+  </div>
+</div>
+
 
 - North Van (Crown Mountain)
   - [SREF](https://spotwx.com/products/grib_index.php?model=sref_pgrb132&lat=49.40986&lon=-123.09245&tz=America/Vancouver&label=) - 3.5 day aggregate
