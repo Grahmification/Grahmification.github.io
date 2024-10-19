@@ -1690,7 +1690,7 @@ $sidebar-display: "sidebar-display";
   width: 12px;
 }
 
-#github-projects { 
+.card-collection { 
   margin-right: -8px;
   margin-left: -8px;
   
@@ -1699,12 +1699,6 @@ $sidebar-display: "sidebar-display";
     padding-left: 8px !important;
   }
   
-  h3 {
-    font-size: 16px;
-    padding-top: 0rem;
-    margin-top: 0px;
-  }
-
   .card {
     border-color: var(--card-border-color);
     background-color: var(--card-bg);
@@ -1712,38 +1706,60 @@ $sidebar-display: "sidebar-display";
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    h3 {
-      color: var(--text-color);
-    }
+
     &:hover {
       -webkit-transform: translate3d(0, -3px, 0);
       transform: translate3d(0, -3px, 0);
       box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.15);
     }
-  }
 
-  .stat-text {
-    font-size: 12px !important;
-    color: var(--text-color) !important;
-  }
+    h3 {
+      font-size: 16px;
+      padding-top: 0rem;
+      margin-top: 0px;
+      color: var(--text-color);
+    }
 
-  p {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
+    .stat-text {
+      font-size: 12px !important;
+      color: var(--text-color) !important;
+    }
 
-  a {
-    border-bottom-style: none;
-    //color: var(--text-color);
-  }
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
 
-  a:hover {
-    text-decoration: none;
+      &.text-small {
+        font-size: 0.7rem;
+      }
+    }
+  
+    a {
+      border-bottom-style: none;
+      //color: var(--text-color);
+  
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    // Spotwx cards
+    .badge-dark {
+      color: inherit;
+
+      &:hover {
+        @extend %tag-hover;
+
+        border-bottom: none;
+        text-decoration: none;
+        color: #d2603a;
+      }
+    }
   }
 }
 
