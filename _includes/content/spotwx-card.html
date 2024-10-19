@@ -1,0 +1,38 @@
+{% assign spotwx_url = 'https://spotwx.com/products/grib_index.php?model=' %}
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex flex-justify-between flex-items-start mb-1">
+            <h3 data-toc-skip class="mb-1">
+                <a href="https://www.google.com/search?q={{ include.title }}+weather">
+                    <i class="fas fa-map-marker-alt mr-1 v-align-middle"></i>
+                    {{ include.title }}
+                  </a>
+            </h3>
+        </div>
+        
+        <p class="text-small ml-3">{{include.lat}}°N {{include.long}}°W</p>
+
+        <ul>
+            <li>
+                <a href="{{spotwx_url}}sref_pgrb132&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">SREF</a>, 
+                <a href="{{spotwx_url}}nam_awphys&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">NAM</a> 
+                <span class="badge badge-dark" data-toggle="tooltip" data-placement="top" title="These models predict 3.5 days in advance, with a 12km radius around the target location. The SREF is a aggregate forecast which averages many other models.">3.5 Day / 12km</span> 
+            </li>
+            <li>
+                <a href="{{spotwx_url}}hrdps_continental&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">HRDPS</a>
+                <span class="badge badge-dark" data-toggle="tooltip" data-placement="top" title="This model predicts 2 days in advance, with a 2.5km radius around the target location.">2 Day / 2.5km</span> 
+            </li>
+            <li>
+                <a href="{{spotwx_url}}rap_awp130pgrbf&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">RAP</a>
+                <span class="badge badge-dark" data-toggle="tooltip" data-placement="top" title="This model predicts 21 hours in advance, with a 13km radius around the target location.">21 Hr / 13km </span>
+                <span class="badge badge-success" data-toggle="tooltip" data-placement="top" title="This model includes cloud heights."><i class="fas fa-cloud"></i></span>
+            </li>
+            <li>
+                <a href="{{spotwx_url}}hrrr_wrfprsf&lat={{include.lat}}&lon={{include.long}}&tz=America/Vancouver">HRRR</a>
+                <span class="badge badge-dark" data-toggle="tooltip" data-placement="top" title="This model predicts 18 hours in advance, with a 3km radius around the target location.">18 Hr / 3km</span>
+                <span class="badge badge-success" data-toggle="tooltip" data-placement="top" title="This model includes cloud heights."><i class="fas fa-cloud"></i></span>
+            </li>
+        </ul>
+    </div>  
+</div>

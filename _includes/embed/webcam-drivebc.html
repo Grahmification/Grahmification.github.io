@@ -1,0 +1,29 @@
+<div class="embed-webcam-card">
+  {% if include.title %}
+  <span>
+    {{ include.title }} <a href="https://images.drivebc.ca/bchighwaycam/pub/html/www/{{ include.id }}.html">&#9166;</a>
+  </span>
+  {% endif %}
+  <a href="https://images.drivebc.ca/ReplayTheDay/player.html?cam={{ include.id }}">
+    <img src="https://cache.drivebc.ca/bchighwaycam/pub/cameras/{{ include.id }}.jpg">
+  </a>
+</div>
+
+<!--
+ Code for embedding a webcam directly - didn't work
+ <iframe class="embed-highway" height="385" width="441" title="Video Player" loading="lazy" frameborder="0" src="https://images.drivebc.ca/ReplayTheDay/player.html?cam=686">
+</iframe>
+
+<script>
+  $(document).ready(function(){ //wait for DOM to finish loading
+        $(".embed-highway").on("load", function() {//wait for Iframe to finish loading
+              console.log("TEST")
+              var body = $(this).contents().find("body"); //syntax #1, head as jQuery selection
+              console.log(body);
+              body.attr("test", "testdesc");
+              body.removeAttr("onload");          
+        });
+  });
+</script>
+
+-->

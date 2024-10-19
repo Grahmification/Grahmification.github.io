@@ -1,0 +1,7 @@
+<div class="embed-webcam-card">
+  {% if include.title %}
+  <span>{{ include.title }}</span>
+  {% endif %}
+  <iframe class="embed-video" frameborder="0" loading="lazy" allowfullscreen src="{{ include.url }}">
+  </iframe>
+</div>
