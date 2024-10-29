@@ -27,3 +27,6 @@ gem "webrick", "~> 1.8"
 # Removed from the standard library in Ruby 3.4
 gem "csv", "~> 3.3"
 gem "base64", "~> 0.2.0"
+
+# Optional
+gem 'faraday-retry', '~> 2.2'
