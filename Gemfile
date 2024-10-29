@@ -18,7 +18,12 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.2.0", :install_if => Gem.win_platform?
 
-gem "webrick", "~> 1.8"
-
 # Needed to pull repo data from github
 gem "jekyll-github-metadata"
+
+# Removed from the standard library in Ruby 3.0
+gem "webrick", "~> 1.8"
+
+# Removed from the standard library in Ruby 3.4
+gem "csv", "~> 3.3"
+gem "base64", "~> 0.2.0"
