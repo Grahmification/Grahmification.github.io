@@ -20,7 +20,7 @@ This page contains a bunch of useful links and engineering related information. 
 - [FftSharp](https://github.com/swharden/FftSharp) - A collection of Fast Fourier Transform (FFT) tools ![GitHub](https://img.shields.io/github/license/swharden/FftSharp)
 - [Helix Toolkit](https://github.com/helix-toolkit/helix-toolkit) - super powerful 3D rendering library ![GitHub](https://img.shields.io/github/license/helix-toolkit/helix-toolkit)
 - [Math.NET Numerics](https://github.com/mathnet/mathnet-numerics) - for advanced math ![GitHub](https://img.shields.io/github/license/mathnet/mathnet-numerics)
-- [AForge.NET](https://www.aforgenet.com/) - computer vision, ai, machine learning ![GitHub](https://img.shields.io/github/license/andrewkirillov/AForge.NET)
+- [AForge.NET](https://www.aforgenet.com/framework/) - computer vision, ai, machine learning ![GitHub](https://img.shields.io/github/license/andrewkirillov/AForge.NET)
 - [Xabe.FFmpeg](https://github.com/tomaszzmuda/Xabe.FFmpeg) - C# FFmpeg port. Audio/video converting. ![GitHub](https://img.shields.io/github/license/tomaszzmuda/Xabe.FFmpeg)
 
 #### Python:
