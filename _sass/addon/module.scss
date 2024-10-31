@@ -1,3 +1,5 @@
+@use "variables";
+
 /*
 * Mainly scss modules, only imported to `assets/css/main.scss`
 */
@@ -52,7 +54,7 @@
 }
 
 %rounded {
-  border-radius: $radius-lg;
+  border-radius: variables.$radius-lg;
 }
 
 %img-caption {
