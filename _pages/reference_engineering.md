@@ -20,7 +20,7 @@ This page contains a bunch of useful links and engineering related information. 
 - [FftSharp](https://github.com/swharden/FftSharp) - A collection of Fast Fourier Transform (FFT) tools ![GitHub](https://img.shields.io/github/license/swharden/FftSharp)
 - [Helix Toolkit](https://github.com/helix-toolkit/helix-toolkit) - super powerful 3D rendering library ![GitHub](https://img.shields.io/github/license/helix-toolkit/helix-toolkit)
 - [Math.NET Numerics](https://github.com/mathnet/mathnet-numerics) - for advanced math ![GitHub](https://img.shields.io/github/license/mathnet/mathnet-numerics)
-- [AForge.NET](http://www.aforgenet.com/) - computer vision, ai, machine learning ![GitHub](https://img.shields.io/github/license/andrewkirillov/AForge.NET)
+- [AForge.NET](https://www.aforgenet.com/) - computer vision, ai, machine learning ![GitHub](https://img.shields.io/github/license/andrewkirillov/AForge.NET)
 - [Xabe.FFmpeg](https://github.com/tomaszzmuda/Xabe.FFmpeg) - C# FFmpeg port. Audio/video converting. ![GitHub](https://img.shields.io/github/license/tomaszzmuda/Xabe.FFmpeg)
 
 #### Python:
@@ -39,7 +39,7 @@ This page contains a bunch of useful links and engineering related information. 
 ## Mechanical Design
 ---
 
-- [Slocum Fundamentals of Design](http://pergatory.mit.edu/resources/fundamentals.html) - possibly one of the best design guides ever written
+- [Slocum Fundamentals of Design](https://pergatory.mit.edu/resources/fundamentals.html) - possibly one of the best design guides ever written
 - [Precision Point](https://www.jpe-innovations.com/precision-point/) - incredibly good precision and robotics design info
 - [Precision Balls Papers](https://www.precisionballs.com/tech_papers.php) - info on kinematic couplings
 
@@ -52,7 +52,7 @@ This page contains a bunch of useful links and engineering related information. 
 - [ISO preferred fits](https://amesweb.info/fits-tolerances/preferred-tolerances-table.aspx) - list of preferred fits
 - [Press fit calculator](https://amesweb.info/press-fit/interference-fit-calculator.aspx) - super detailed loading calculator
 
-- [MatWeb](http://www.matweb.com/search/CompositionSearch.aspx) - huge material properties database
+- [MatWeb](https://www.matweb.com/search/CompositionSearch.aspx) - huge material properties database
 
 - [Bolt torque/tightness conversions](https://www.tohnichi.com/pdf/02-bolt-tightening.pdf) - printable
 

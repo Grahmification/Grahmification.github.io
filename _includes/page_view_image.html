@@ -7,5 +7,5 @@
     {% assign baseurl = site.page_count.base_url %}
     {% assign file_name = include.file_name %}
     {% assign fullurl = baseurl | append: '/' | append: file_name | append: '.svg'  %}
-    <img class="view-count" src="{{ fullurl }}" onerror="this.style.display='none'">
+    <img class="view-count" src="{{ fullurl }}" onerror="this.style.display='none'" alt="page-view-counter">
 {% endif %}
