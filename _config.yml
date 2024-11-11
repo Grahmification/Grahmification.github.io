@@ -192,3 +192,4 @@ githup_repos:
 
 plugins:
   - "jekyll-github-metadata"
+  - "jekyll-target-blank"

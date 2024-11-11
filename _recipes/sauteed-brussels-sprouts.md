@@ -1,6 +1,6 @@
 ---
 
-title: Sautéed Brussels Sprouts
+title: Sauteed Brussels Sprouts
 image:
 categories: [Recipes]
 tags: [sides, vegetarian, vegan]     # TAG names should always be lowercase
