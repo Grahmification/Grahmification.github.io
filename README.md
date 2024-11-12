@@ -9,8 +9,9 @@ A personal website based on the [Chirpy](https://github.com/cotes2020/jekyll-the
 
 ## Prerequisites
 
-Follow the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll` and `Bundler`.
-* As of most recent this code has been verified with Ruby 3.3. Installing for other Ruby versions may require manually adjusting the versions of gems or installing gems not listed in the Gemfile.
+1. Follow the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll` and `Bundler`.
+   * As of most recent this code has been verified with Ruby 3.3. Installing for other Ruby versions may require manually adjusting the versions of gems or installing gems not listed in the Gemfile.
+2. Install GIT.
 
 ## Installation
 
