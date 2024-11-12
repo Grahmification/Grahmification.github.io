@@ -17,6 +17,9 @@ Calculators:
 
 Some handy tools are listed here. Also check out [Novel Investor](https://novelinvestor.com/financial-tools/) for another big list.
 
+Taxes:
+- [RRSP Contribution Optimizer](https://www.rrspcontribution.ca/) - Optimize how much you should contribute to your RRSP
+
 ETFs:
 - [ETFdb](https://etfdb.com/) - Massive database of ETFs
 - [ETF Breakdown](https://www.etfbreakdown.com/) - Compares underlying holdings for an ETF portfolio
