@@ -29,7 +29,7 @@ Detailed Stats:
 - [Finviz](https://finviz.com/) - Highly detailed stock tracking (Note: US exchanges only)
   - Check out the [Finviz Map](https://finviz.com/map.ashx?t=sec)
 - [Whale Wisdom](https://whalewisdom.com/) - Use to look up percent ownership of a stock
-- [Open Insider](http://openinsider.com/) - Insider trading stats for US companies
+- <a href="http://openinsider.com/" data-proofer-ignore>Open Insider</a> - Insider trading stats for US companies
 - [Insider Tracking](https://www.insidertracking.com/) - Insider trading stats for Canadian companies
 - [SEC Filings](https://www.sec.gov/search-filings) - Look up specific company filings
 - [Fitch Ratings](https://www.fitchratings.com/) - Look up bond ratings for Canadian companies
