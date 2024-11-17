@@ -112,7 +112,7 @@ One of the biggest fundamental aspects I consider easy to overlook is the import
 
 Consider the animation below. Three pendulums are swung at the exact same amplitude, but with different frequencies. The middle pendulum vibrates drastically more because the input frequency is near it's resonant frequency. If we were trying to move the pendulum at this frequency we'd have vibration problems, but we could speed up or slow down to get much better results.
 
-![Resonant Pendulums](https://upload.wikimedia.org/wikipedia/commons/2/25/Driven-pendulums-resonance-animation.gif){: width="250"}
+![Resonant Pendulums]({{ imagePath }}/resonance-animation-driven-pendulums.gif){: width="250"}
 _Three identical pendulums excited with the same amplitude, but different frequency._
 
 The behavior of these pendulums is plotted below on a transmissibility curve. 
@@ -122,7 +122,7 @@ The behavior of these pendulums is plotted below on a transmissibility curve.
 
 If this doesn't make sense to you, try shaking something flexible like a metal ruler at different speeds and see if you can replicate the curve.
 
-![Resonance Transmissibility Plot](https://upload.wikimedia.org/wikipedia/commons/0/07/Resonance.PNG){: width="600"}
+![Resonance Transmissibility Plot]({{ imagePath }}/resonance-transmissibility-curve.png){: width="600"}
 _Behavior of the animated pendulums plotted over many input frequencies. The middle case occurs at a frequency ratio of 1._
 
 This plot visualizes the most important principle of input shaping; if you move an object at frequencies near it's resonant frequency, you're going to have vibration problems. Another key realization is that we have two options to solve this: speeding up or slowing down!
@@ -139,12 +139,12 @@ The theory above only applies to inputs that are a sine wave. But this generally
 
 What does this actually mean? Essentially, it means we can represent any curve with sine waves. This might be hard to believe, but check out the example below: we can produce a highly complex function just by adding four sine waves together!
 
-![Fourier Circles Animation](https://upload.wikimedia.org/wikipedia/commons/b/bd/Fourier_series_square_wave_circles_animation.svg){: width="400"}
+![Fourier Circles Animation]({{ imagePath }}/fourier-series-square-wave-circles-animation.svg){: width="400"}
 _Combining four sine waves produces a highly complex curve._
 
 Still skeptical? The next example shows how we can represent a highly complex function with sine waves. If we added infinite sine waves together we'd be able to match the line perfectly. 
 
-![Fourier Converence Animation](https://upload.wikimedia.org/wikipedia/commons/3/37/Example_of_Fourier_Convergence.gif){: width="300"}
+![Fourier Converence Animation]({{ imagePath }}/fourier-convergence-example.gif){: width="300"}
 _Even complicated functions can be represented by sine waves._
 
 While Fourier's theorem states that we need infinite sine waves to perfectly represent any curve, a key observation is that we can get pretty close with only a few sine waves. What this ultimately means is:
@@ -162,7 +162,7 @@ So how do we actually go about input shaping for real trajectories? There are a 
 * Forces are proportional to acceleration (F=ma).
 * The [fast fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) (FFT) is an easy method to decompose a function into it's sine waves (frequency components).
 
-![Fast Fourier Transform](https://upload.wikimedia.org/wikipedia/commons/b/b1/FFT_of_Complex_Cosine.png){: width="500"}
+![Fast Fourier Transform]({{ imagePath }}/fft-frequency-spectrum-example.png){: width="500"}
 _The FFT extracts frequency components (sine waves) from a time series signal._
 
 
