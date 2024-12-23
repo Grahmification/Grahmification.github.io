@@ -34,6 +34,12 @@ social:
     - https://github.com/Grahmification
     - https://www.linkedin.com/in/kerrgraham
 
+# Define a global author for jekyll-seo-tag
+# Template › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-author-url
+author:
+  name: Graham Kerr
+  url: https://github.com/Grahmification
+
 # link to an website serving images for the purpose of counting page views
 page_count:
   #do not enable without a url
