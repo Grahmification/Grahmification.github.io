@@ -15,7 +15,7 @@
         <div class="col-12 col-md pl-0 pr-0">
           <div class="post-content">
             <p>
-              {% include no-linenos.html content=post.content %}
+              {% include tools/no-linenos.html content=post.content %}
               {{ content | markdownify | strip_html | truncate: 200 }}
             </p>
           </div>
@@ -28,7 +28,7 @@
     {% else %}
     <div class="post-content">
       <p>
-        {% include no-linenos.html content=post.content %}
+        {% include tools/no-linenos.html content=post.content %}
         {{ content | markdownify | strip_html | truncate: 200 }}
       </p>
     </div>

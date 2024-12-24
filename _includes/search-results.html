@@ -6,7 +6,7 @@
     <div id="search-hints">
       <h4 class="text-muted mb-4">{{ site.data.label.panel.trending_tags | default: 'Trending Tags' }}</h4>
 
-      {% include trending-tags.html %}
+      {% include tools/trending-tags.html %}
 
       {% for tag in trending_tags %}
         {% capture url %}/tags/{{ tag | slugify | url_encode }}/{% endcapture %}
