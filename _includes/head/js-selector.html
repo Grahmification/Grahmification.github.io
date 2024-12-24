@@ -44,6 +44,10 @@
   </script>
 {% endif %}
 
+{% if page.mermaid %}
+  {% include head/mermaid.html %}
+{% endif %}
+
 {% if jekyll.environment == 'production' %}
   <!-- PWA -->
   <script defer src="{{ '/app.js' | relative_url }}"></script>
