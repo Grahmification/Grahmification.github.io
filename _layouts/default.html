@@ -13,7 +13,7 @@ layout: compress
 
 <html lang="{{ site.lang | default: "en-US" }}" {{ prefer_mode }}>
 
-  {% include head.html %}
+  {% include head/head.html %}
 
   <body data-spy="scroll" data-target="#toc">
 
@@ -24,7 +24,7 @@ layout: compress
     <div id="main-wrapper">
       <div id="main">
 
-        {% include refactor-content.html content=content %}
+        {% include tools/refactor-content.html content=content %}
 
         {% include footer.html %}
 
@@ -33,10 +33,6 @@ layout: compress
       {% include search-results.html %}
 
     </div> <!-- #main-wrapper -->
-
-    {% if page.mermaid %}
-      {% include mermaid.html %}
-    {% endif %}
 
     <div id="mask"></div>
 

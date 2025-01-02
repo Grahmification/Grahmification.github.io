@@ -72,7 +72,7 @@ Open a browser and visit to _<http://localhost:4000>_.
 
 Special steps need to be taken to add new javascript asset files to the website. These steps ensure the javascript will properly get minified and the website will know where to locate it. 
 1. Add javascript files to folders in `/assets/js`
-2. `/_includes/js-selector.html` determines which javascript file is loaded for each given page. Determine which file is needed for the page you want to add new scripts to.
+2. `/_includes/head/js-selector.html` determines which javascript file is loaded for each given page. Determine which file is needed for the page you want to add new scripts to.
 3. `/gulpfile.js/tasks/js.js` specifies the process for building all javascript files at /assets/js into properly minified files at `/assets/js/dist`. Modify this file to include the new scripts as required by js-selector.html.
 4. Install node.js, gulp.js, and any other dependencies listed in `/gulpfile.js/tasks/js.js`
 5. Open a terminal at the root project folder and run a `gulp` command. This will execute the gulp build process and overwrite the javascript files at `/assets/js/dist`.

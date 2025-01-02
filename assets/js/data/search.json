@@ -10,7 +10,7 @@ layout: compress
     "categories": "{{ post.categories | join: ', '}}",
     "tags": "{{ post.tags | join: ', ' }}",
     "date": "{{ post.date }}",
-    {% include no-linenos.html content=post.content %}
+    {% include tools/no-linenos.html content=post.content %}
     "snippet": "{{ content | strip_html | strip_newlines | remove_chars | escape | truncate: 300 | replace: '\', '\\\\' }}"
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -21,7 +21,7 @@ layout: compress
     "url": "{{ site.baseurl }}{{ recipe.url }}",
     "categories": "{{ recipe.categories | join: ', '}}",
     "tags": "{{ recipe.tags | join: ', ' }}",
-    {% include no-linenos.html content=recipe.content %}
+    {% include tools/no-linenos.html content=recipe.content %}
     {% assign normalizedContent = content | strip_html | strip_newlines | remove_chars | escape | truncate: 300 | replace: '\', '\\\\' %}  
     {% if normalizedContent != "" %}
       "snippet": "{{ normalizedContent }}"
@@ -48,7 +48,7 @@ layout: compress
       "url": "{{ repository.html_url }}",
       "categories": "Github Repository",
       "tags": "{{ repository.language }}",
-      {% include no-linenos.html content=repository.description %}
+      {% include tools/no-linenos.html content=repository.description %}
       {% assign normalizedContent = content | strip_html | strip_newlines | remove_chars | escape | truncate: 300 | replace: '\', '\\\\' %}  
       {% if normalizedContent != "" %}
         "snippet": "{{ normalizedContent }}"
