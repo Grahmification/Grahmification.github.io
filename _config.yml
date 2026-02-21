@@ -194,6 +194,8 @@ githup_repos:
     forks: true
     repos: 
       - Grahmification # Ignore profile readme
+      - Integration-Testing # Ignore test repo
+      - Music # 
     # - add a repo-name to exlude it specifically
 
 plugins:
