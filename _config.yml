@@ -46,7 +46,7 @@ page_count:
   enabled: true
   base_url: https://amazing-zenith-parsley.glitch.me
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: 17EFa4Eds6u8AnA3ox2Iez0wjdSrG-X-cqbOrRYZYAM # change to your verification string
 # --------------------------
 
 google_analytics:
@@ -194,6 +194,8 @@ githup_repos:
     forks: true
     repos: 
       - Grahmification # Ignore profile readme
+      - Integration-Testing # Ignore test repo
+      - Music # 
     # - add a repo-name to exlude it specifically
 
 plugins:
