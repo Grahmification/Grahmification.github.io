@@ -143,6 +143,24 @@ defaults:
       layout: recipe
       comments: false    # Disable comments in recipes.
       toc: false         # Display TOC column - Needed for bootstrap to work (see css-selector.html)
+  # Exclude all Tag archive pages from sitemap (and sub-pages)
+  - 
+    scope:
+      path: tags
+    values:
+      sitemap: false
+  # Exclude all Category archive pages from sitemap (and sub-pages)
+  - 
+    scope:
+      path: categories
+    values:
+      sitemap: false
+  # Exclude all files pages from sitemap
+  - 
+    scope:
+      path: files
+    values:
+      sitemap: false
 
 sass:
   style: compressed
