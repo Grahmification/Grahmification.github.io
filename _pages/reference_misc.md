@@ -2,6 +2,7 @@
 title: Miscellaneous Reference Info
 layout: page
 permalink: /reference/misc/
+sitemap: false  # Exclude this page from sitemap to prioritize indexing higher value pages
 ---
 
 This page contains a bunch of random links and information I've found useful.

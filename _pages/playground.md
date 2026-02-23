@@ -2,6 +2,7 @@
 title: Playground
 layout: page
 permalink: /playground/
+sitemap: false  # Exclude this page from sitemap to prioritize indexing higher value pages
 math: true
 mermaid: true
 ---
