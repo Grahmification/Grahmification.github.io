@@ -71,9 +71,10 @@
       @extend %link-hover;
     }
 
-    h1 {
+    h3 {
       font-size: 1.4rem;
       margin: 0;
+      padding-top: 0;
     }
 
     .post-meta {
