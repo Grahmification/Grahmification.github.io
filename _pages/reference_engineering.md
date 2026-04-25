@@ -48,6 +48,8 @@ This page contains a bunch of useful links and engineering related information. 
 - [GrabCAD](https://grabcad.com/library) - huge library of CAD models
 
 ### Mechanical Reference
+- [Metric Socket Head Screws]({{ 'reference/engineering/fasteners' | relative_url }}) - DIN 912 & DIN 7991 Dimensions
+
 - [ISO fits calculator](https://amesweb.info/fits-tolerances/tolerance-calculator.aspx) - visualize shaft/hole fits
 - [ISO preferred fits](https://amesweb.info/fits-tolerances/preferred-tolerances-table.aspx) - list of preferred fits
 - [Press fit calculator](https://amesweb.info/press-fit/interference-fit-calculator.aspx) - super detailed loading calculator
