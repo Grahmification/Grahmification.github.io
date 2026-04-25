@@ -4,6 +4,29 @@ layout: page
 permalink: /reference/din7991/
 ---
 
+<style>
+  .dim-group { cursor: help; transition: opacity 0.2s; }
+  .dim-group:hover { opacity: 0.6; }
+  #custom-tooltip {
+    position: fixed;
+    display: none;
+    background: #343a40;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    z-index: 2000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 250px;
+    line-height: 1.4;
+    border: 1px solid #495057;
+  }
+</style>
+
+<!-- Tooltip Element -->
+<div id="custom-tooltip"></div>
+
 This interactive tool provides the complete dimensions and tolerances for metric hexagon socket countersunk head cap screws as defined by **DIN 7991** (and mostly equivalent to ISO 10642). Select the screw size and length to update the diagram and data tables.
 
 <div class="row mt-4">
@@ -64,14 +87,16 @@ This interactive tool provides the complete dimensions and tolerances for metric
             <line id="top-ext-e-1" x1="-46.2" y1="10" x2="-46.2" y2="130" />
             <line id="top-ext-e-2" x1="46.2" y1="10" x2="46.2" y2="130" />
           </g>
-          <line id="top-dim-s-line-mid" stroke="#dc3545" stroke-width="2" />
-          <line id="top-dim-s-line-1" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
-          <line id="top-dim-s-line-2" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
-          <text id="top-dim-s-text" x="-128" y="5" text-anchor="end" fill="#dc3545" font-size="14" font-weight="bold">s</text>
-          <line id="top-dim-e-line-mid" stroke="#dc3545" stroke-width="2" />
-          <line id="top-dim-e-line-1" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
-          <line id="top-dim-e-line-2" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
-          <text id="top-dim-e-text" x="0" y="142" text-anchor="middle" fill="#dc3545" font-size="14" font-weight="bold">e</text>
+          <g class="dim-group" data-title="Socket Size (s): Distance across the flats of the hexagon socket.">
+            <line id="top-dim-s-line-1" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
+            <line id="top-dim-s-line-2" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
+            <text id="top-dim-s-text" x="-128" y="5" text-anchor="end" fill="#dc3545" font-size="14" font-weight="bold">s</text>
+          </g>
+          <g class="dim-group" data-title="Corner Width (e): Minimum distance across the corners of the hexagon socket.">
+            <line id="top-dim-e-line-1" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
+            <line id="top-dim-e-line-2" stroke="#dc3545" stroke-width="2" marker-end="url(#arrow-end)" />
+            <text id="top-dim-e-text" x="0" y="142" text-anchor="middle" fill="#dc3545" font-size="14" font-weight="bold">e</text>
+          </g>
           <text y="-95" text-anchor="middle" font-size="13" fill="#495057" font-weight="bold">Top View</text>
         </g>
 
@@ -85,27 +110,37 @@ This interactive tool provides the complete dimensions and tolerances for metric
             <line id="ext-b-top" /><line id="ext-b-bottom" />
           </g>
 
-          <g id="dim-lines" stroke="#dc3545" stroke-width="2">
-            <line id="dim-dk-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
-            <line id="dim-d-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
-            <line id="dim-k-line-mid" />
-            <line id="dim-k-line-1" marker-end="url(#arrow-end)" />
-            <line id="dim-k-line-2" marker-end="url(#arrow-end)" />
-            <line id="dim-L-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
-            <line id="dim-t-line" marker-end="url(#arrow-end)" />
-            <line id="dim-t-line-2" marker-end="url(#arrow-end)" stroke="#dc3545" stroke-width="2" />
-            <line id="dim-b-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
-            <line id="dim-a-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
-          </g>
-
-          <g id="dim-texts" fill="#dc3545" font-size="14" font-weight="bold">
-            <text id="dim-dk-text" text-anchor="middle">dk</text>
-            <text id="dim-d-text" text-anchor="middle">d</text>
-            <text id="dim-k-text" text-anchor="start">k</text>
-            <text id="dim-L-text" text-anchor="start">L</text>
-            <text id="dim-t-text" text-anchor="end">t</text>
-            <text id="dim-b-text" text-anchor="start">b</text>
-            <text id="dim-a-text" text-anchor="middle">Angle</text>
+          <g id="dimensions-group" stroke="#dc3545" stroke-width="2" fill="#dc3545" font-size="14" font-weight="bold">
+            <g class="dim-group" data-title="Head Diameter (dk): The maximum diameter of the countersunk head.">
+              <line id="dim-dk-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+              <text id="dim-dk-text" text-anchor="middle" stroke="none">dk</text>
+            </g>
+            <g class="dim-group" data-title="Nominal Diameter (d): The major diameter of the thread.">
+              <line id="dim-d-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+              <text id="dim-d-text" text-anchor="middle" stroke="none">d</text>
+            </g>
+            <g class="dim-group" data-title="Head Height (k): Maximum distance from the top of the head to the shank.">
+              <line id="dim-k-line-1" marker-end="url(#arrow-end)" />
+              <line id="dim-k-line-2" marker-end="url(#arrow-end)" />
+              <text id="dim-k-text" text-anchor="start" stroke="none">k</text>
+            </g>
+            <g class="dim-group" data-title="Total Length (L): The overall length including the countersunk head.">
+              <line id="dim-L-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+              <text id="dim-L-text" text-anchor="start" stroke="none">L</text>
+            </g>
+            <g class="dim-group" data-title="Socket Depth (t): Minimum engagement depth for the hex key.">
+              <line id="dim-t-line" marker-end="url(#arrow-end)" />
+              <line id="dim-t-line-2" marker-end="url(#arrow-end)" />
+              <text id="dim-t-text" text-anchor="end" stroke="none">t</text>
+            </g>
+            <g id="b-dim-group" class="dim-group" data-title="Thread Length (b): The minimum length of the threaded portion.">
+              <line id="dim-b-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+              <text id="dim-b-text" text-anchor="start" stroke="none">b</text>
+            </g>
+            <g class="dim-group" data-title="Countersink Angle: Typically 90 degrees for standard screws.">
+              <line id="dim-a-line" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+              <text id="dim-a-text" text-anchor="middle" stroke="none">Angle</text>
+            </g>
           </g>
         </g>
       </svg>
@@ -393,6 +428,28 @@ document.addEventListener('DOMContentLoaded', function() {
   sizeSelect.addEventListener('change', populateLengths);
   lengthSelect.addEventListener('change', updateDiagram);
   populateLengths(); 
+
+  // Tooltip Logic
+  const tooltip = document.getElementById('custom-tooltip');
+  const dimGroups = document.querySelectorAll('.dim-group');
+  
+  dimGroups.forEach(group => {
+    group.addEventListener('mouseenter', (e) => {
+      const titleText = group.getAttribute('data-title');
+      tooltip.textContent = titleText;
+      tooltip.style.display = 'block';
+    });
+    
+    group.addEventListener('mousemove', (e) => {
+      // Use clientX/Y with fixed positioning to avoid container/scroll offsets
+      tooltip.style.left = (e.clientX + 15) + 'px';
+      tooltip.style.top = (e.clientY + 15) + 'px';
+    });
+    
+    group.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+  });
 });
 </script>
 
