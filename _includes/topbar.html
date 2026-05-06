@@ -12,6 +12,7 @@
       <!-- index page -->
       <span>{{ 'Posts' }}</span>
     {% else %}
+      {% assign accumulated_url = '/' %}
 
       {% for item in paths %}
 
@@ -27,7 +28,8 @@
 
         {% else %}
         <span>
-          {% assign url = item %}
+          {% assign accumulated_url = accumulated_url | append: item | append: '/' %}
+          {% assign url = accumulated_url %}
           {% if item == 'posts' and page.layout == 'post' %}
             {% assign url = '/' %}
           {% endif %}
