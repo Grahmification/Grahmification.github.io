@@ -49,6 +49,7 @@ This page contains a bunch of useful links and engineering related information. 
 
 ### Mechanical Reference
 - [Metric Socket Head Screws]({{ 'reference/engineering/fasteners' | relative_url }}) - DIN 912 & DIN 7991 Dimensions
+- [Tap and Clearance Drill Sizes]({{ 'reference/engineering/drill-sizes' | relative_url }}) - Interactive reference chart
 
 - [ISO fits calculator](https://amesweb.info/fits-tolerances/tolerance-calculator.aspx) - visualize shaft/hole fits
 - [ISO preferred fits](https://amesweb.info/fits-tolerances/preferred-tolerances-table.aspx) - list of preferred fits
