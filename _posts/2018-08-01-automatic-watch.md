@@ -4,6 +4,13 @@ date: 2018-08-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Hobby]
 tags: [design, cad, machining]     # TAG names should always be lowercase
 thumbnail: /files/images/watch-thumbnail.jpg
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "Custom Mechanical Watch Design and Machining"
+image: /files/images/watch-thumbnail.jpg
+description: "Design and machining workflow of a custom 12.25 ligne automatic movement watch machined from 6061-T6 aluminum."
 ---
 
 Having previously built a few mechanical clocks out of lego, I always thought machining a custom watch would be a really cool project to hone my abilities, and hopefully result in something I could use for a very long time. 

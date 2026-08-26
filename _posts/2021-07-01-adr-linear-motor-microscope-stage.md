@@ -4,6 +4,13 @@ date: 2021-07-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Zaber]
 tags: [design, cad]     # TAG names should always be lowercase
 thumbnail: /files/images/X-ADR-AE-thumbnail.png
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "ADR Linear Motor Microscope Stage Overview and Design"
+image: /files/images/X-ADR130B100B-SAE53D12-stage.png
+description: "Developing a highly application-specific linear motor XY microscope stage optimized for 24/7 high-throughput automation."
 ---
 
 The [ADR series](https://www.zaber.com/products/scanning-microscope-stages/X-ADR-AE) of linear motor XY microscope stages is one of the most application specific products I've developed. The goal of this project was to design the best stage in the world for 24/7 high throughput imaging with a form factor that can be mounted to conventional inverted microscopes from "the big 4".

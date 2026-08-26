@@ -4,6 +4,13 @@ date: 2014-03-30 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, School]
 tags: [design, cad, laser cutter]     # TAG names should always be lowercase
 thumbnail: https://live.staticflickr.com/5819/24104679486_72835ec93e_b.jpg
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "Automatic Book Page Turner Design and Construction"
+image: https://live.staticflickr.com/5819/24104679486_72835ec93e_b.jpg
+description: "A 2nd-year engineering design project creating a mechanical assistive device to automatically turn book pages for disabled individuals."
 ---
 
 The automatic page turner was created as part of a 2nd year Engineering design class at the U of S. The goal was to create a device for a disabled lady to automatically turn the pages of a book at the click of a button. Ideally it would work with as many sizes of books as possible. How hard could it be?

@@ -4,6 +4,13 @@ date: 2019-06-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Zaber]
 tags: [design, cad]     # TAG names should always be lowercase
 thumbnail: /files/images/X-LDA-stage-lineup-thumbnail.png
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "LDA Miniature Direct Drive Overview and Design"
+image: /files/images/X-LDA-stage-lineup.png
+description: "Managing the product development of compact direct-drive stages designed to maintain sub-micron precision in tight spaces."
 ---
 
 The [LDA series](https://www.zaber.com/products/linear-stages/X-LDA-AE) of compact direct drive stages was a project I managed the development of throughout 2019. The goal of this project was to retain as much of the precision of the [LDM series stages]({% post_url 2018-09-01-ldm-linear-motor-stage %}) as possible while significantly shrinking the form factor, further expanding Zaber's offering for easy to use nanometer level precision stages.

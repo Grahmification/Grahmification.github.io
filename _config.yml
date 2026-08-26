@@ -19,7 +19,7 @@ title: Graham Kerr                          # the main title
 tagline: A simple personal website   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A personal website for mechanical engineerings projects, coding, and other interesting things.
+  A personal website for mechanical engineering projects, coding, and other interesting things.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://Grahmification.github.io'
