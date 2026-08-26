@@ -4,6 +4,13 @@ date: 2022-04-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Zaber]
 tags: [design, cad]     # TAG names should always be lowercase
 thumbnail: /files/images/X-LDA-AEZ-w400.png
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "Ultra Precision Direct Drive Vertical Stage Design and Patent"
+image: /files/images/LDA-LDM-AEZ-Comparison-w850.png
+description: "Design and launch of Zaber's direct-drive vertical stages, featuring a patented, user-adjustable passive magnetic counterbalance."
 ---
 
 {% capture imagePath %}/files/images{% endcapture %}

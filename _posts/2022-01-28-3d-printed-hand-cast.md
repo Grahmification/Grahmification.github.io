@@ -4,6 +4,13 @@ date: 2022-01-28 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Hobby]
 tags: [design, cad, 3d-printing, imaging]     # TAG names should always be lowercase
 thumbnail: /files/images/hand-cast-thumbnail.jpg
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "Custom 3D Printed Hand Cast Workflow and Prototyping"
+image: /files/images/hand-cast-model-finished.png
+description: "An engineering workflow combining 3D photogrammetry, Meshmixer surface cleanup, and FDM printing to manufacture custom hand splints."
 ---
 
 {% capture imagePath %}/files/images{% endcapture %}

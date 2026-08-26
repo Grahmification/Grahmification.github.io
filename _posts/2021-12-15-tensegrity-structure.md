@@ -4,6 +4,13 @@ date: 2021-12-15 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Hobby]
 tags: [design, cad, machining]     # TAG names should always be lowercase
 thumbnail: /files/images/Tensegrity-thumnail.jpg
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "Machined Aluminum Tensegrity Structure Design and Manufacturing"
+image: /files/images/Tensegrity-finished.jpg
+description: "Designing and CNC machining high-stiffness aluminum tensegrity structures using custom soft jaws and FEA simulation."
 ---
 
 I had previously 3D printed a [tensegrity structure](https://en.wikipedia.org/wiki/Tensegrity), and thought it would be fun to machine a couple as Christmas presents for my parents. The 3D printed ones are a little flimsy, but I figured steel cables would make these much stiffer.

@@ -4,6 +4,13 @@ date: 2018-09-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Zaber]
 tags: [design, cad]     # TAG names should always be lowercase
 thumbnail: /files/images/X-LDM-stage-lineup-thumbnail.png
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "LDM Ultra Precision Stage Overview and Design"
+image: /files/images/X-LDM-stage-lineup.png
+description: "Product management and development of a linear motor stage lineup lowering the barrier to nanometer-level motion control."
 ---
 
 The [LDM series](https://www.zaber.com/products/linear-stages/X-LDM-AE) of linear motor stages was one of my first projects as a lead product manager. The goal of this product lineup to lower the barrier to entry for ultra-precision nanometer level motion control. Due to the integrated controller, these stages are the first stages in the world capable of single nanometer movements that can also be set up in seconds. It's remarkable to plug in one of these stages and immediately command 25nm movements with the knob.

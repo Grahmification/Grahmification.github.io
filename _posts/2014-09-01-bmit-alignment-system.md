@@ -4,6 +4,13 @@ date: 2014-09-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Canadian Light Source]
 tags: [cad, coding]     # TAG names should always be lowercase
 thumbnail: /files/images/bmit-alignment-thumbnail.png
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "Alignment and Visualization System for Imaging Robotics"
+image: /files/images/bmit-alignment-thumbnail.png
+description: "An automated alignment and industrial robot visualization system implemented for the Canadian Light Source BMIT beamline."
 ---
 
 This project consisted of an alignment and visualization system for a series of industrial robots in the [BMIT beamline](https://bmit.lightsource.ca/) at the Canadian Light Source. It was featured in the [AIP Conference Proceedings 1741](https://aip.scitation.org/doi/abs/10.1063/1.4952846) in 2016.

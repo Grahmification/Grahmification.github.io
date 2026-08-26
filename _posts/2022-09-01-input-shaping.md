@@ -4,6 +4,13 @@ date: 2022-09-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Zaber]
 tags: [coding, mathematics]     # TAG names should always be lowercase
 thumbnail: /files/images/resonance-transmissibility-curve.png
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "Motion Control Input Shaping Theory and Real-Time Trajectory Optimization"
+image: /files/images/resonance-transmissibility-curve.png
+description: "An engineering deep-dive into motion control vibration suppression via real-time trajectory optimization and FFT signal decomposition."
 ---
 
 {% capture imagePath %}/files/images{% endcapture %}

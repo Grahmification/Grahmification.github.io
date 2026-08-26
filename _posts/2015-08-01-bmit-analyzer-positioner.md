@@ -4,6 +4,13 @@ date: 2015-08-01 14:00:00 -0800 #-0800 = pst time
 categories: [Projects, Canadian Light Source]
 tags: [design, cad]     # TAG names should always be lowercase
 thumbnail: /files/images/bmit-analyzer-thumbnail.jpg
+
+# Customizing jekyll-seo-tag JSON-LD output
+seo:
+  type: TechArticle
+  name: "X-Ray Analyzer Positioner Design and Construction"
+image: /files/images/bmit-analyzer-installed.jpg
+description: "Designing, prototyping, and implementing a 3-axis positioner for a silicon diffraction crystal at the Canadian Light Source."
 ---
 
 This project consisted of designing, prototyping, and implementing a 3 axis positioner for a silicon diffraction crystal in the [BMIT beamline](https://bmit.lightsource.ca/) at the Canadian Light Source.
